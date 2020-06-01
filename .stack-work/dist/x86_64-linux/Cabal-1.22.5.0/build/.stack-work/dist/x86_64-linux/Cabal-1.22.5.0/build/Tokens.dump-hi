@@ -1,0 +1,2045 @@
+
+==================== FINAL INTERFACE ====================
+2020-05-10 19:06:03.936209 UTC
+
+interface proje_60jq5xC5Q73LBw1qExzNbC:Tokens 7103
+  interface hash: 08f14f738e3e3f9195b56dd4747ae2be
+  ABI hash: b16a010130639236a797af72816099bf
+  export-list hash: da618d66bd8aaf2fe7f271e9bc0843e3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8dc230b9453f2e206694519f82184084
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tokens.alexGetByte
+  Tokens.alexIndexInt16OffAddr
+  Tokens.alexIndexInt32OffAddr
+  Tokens.alexInputPrevChar
+  Tokens.alexScan
+  Tokens.alexScanTokens
+  Tokens.alexScanUser
+  Tokens.alex_accept
+  Tokens.alex_action_10
+  Tokens.alex_action_11
+  Tokens.alex_action_12
+  Tokens.alex_action_13
+  Tokens.alex_action_14
+  Tokens.alex_action_15
+  Tokens.alex_action_16
+  Tokens.alex_action_17
+  Tokens.alex_action_18
+  Tokens.alex_action_19
+  Tokens.alex_action_2
+  Tokens.alex_action_20
+  Tokens.alex_action_21
+  Tokens.alex_action_22
+  Tokens.alex_action_23
+  Tokens.alex_action_24
+  Tokens.alex_action_25
+  Tokens.alex_action_26
+  Tokens.alex_action_27
+  Tokens.alex_action_28
+  Tokens.alex_action_29
+  Tokens.alex_action_3
+  Tokens.alex_action_30
+  Tokens.alex_action_31
+  Tokens.alex_action_32
+  Tokens.alex_action_33
+  Tokens.alex_action_34
+  Tokens.alex_action_35
+  Tokens.alex_action_36
+  Tokens.alex_action_37
+  Tokens.alex_action_38
+  Tokens.alex_action_39
+  Tokens.alex_action_4
+  Tokens.alex_action_40
+  Tokens.alex_action_41
+  Tokens.alex_action_42
+  Tokens.alex_action_43
+  Tokens.alex_action_5
+  Tokens.alex_action_6
+  Tokens.alex_action_7
+  Tokens.alex_action_8
+  Tokens.alex_action_9
+  Tokens.alex_base
+  Tokens.alex_check
+  Tokens.alex_deflt
+  Tokens.alex_scan_tkn
+  Tokens.alex_tab_size
+  Tokens.alex_table
+  Tokens.quickIndex
+  Tokens.scanTokens
+  Tokens.utf8Encode
+  Tokens.AlexAcc{Tokens.AlexAcc Tokens.AlexAccNone Tokens.AlexAccSkip}
+  Tokens.AlexAddr{Tokens.AlexA#}
+  Tokens.AlexInput
+  Tokens.AlexLastAcc{Tokens.AlexLastAcc Tokens.AlexLastSkip Tokens.AlexNone}
+  Tokens.AlexReturn{Tokens.AlexEOF Tokens.AlexError Tokens.AlexSkip Tokens.AlexToken}
+  Tokens.Byte
+  Tokens.Token{Tokens.TokenAnd Tokens.TokenArrow Tokens.TokenBar Tokens.TokenCase Tokens.TokenCaseArrow Tokens.TokenColon Tokens.TokenComma Tokens.TokenComp Tokens.TokenDiv Tokens.TokenDot Tokens.TokenElse Tokens.TokenEq Tokens.TokenFalse Tokens.TokenFunc Tokens.TokenGE Tokens.TokenGT Tokens.TokenIf Tokens.TokenInt Tokens.TokenLB Tokens.TokenLE Tokens.TokenLParen Tokens.TokenLT Tokens.TokenMinus Tokens.TokenNot Tokens.TokenOf Tokens.TokenOr Tokens.TokenPlus Tokens.TokenPow Tokens.TokenRB Tokens.TokenRParen Tokens.TokenRaise Tokens.TokenSemiColon Tokens.TokenSym Tokens.TokenTBool Tokens.TokenTInt Tokens.TokenTimes Tokens.TokenTopLevelFun Tokens.TokenTrue Tokens.TokenTry Tokens.TokenType Tokens.TokenVar Tokens.TokenWith}
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array 6e22602c1cc5e362609f0924a7c0a209
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array.Base a0576aaf9a801948417a257cfc0c6084
+import  -/  base-4.8.2.0:Data.Bits 87551525e7ef366d0fc4cad44e8b1bfc
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:Data.Word ec8deb535202352cc8b509b14004bcbd
+import  -/  base-4.8.2.0:GHC.Arr 70f35e6bfbc61995e045edb612354887
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Exts 7bdf420b67c4b8c9ccc9ea593e90bb92
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:GHC.Word 10dc88543d98000abab9695a1019767d
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:Text.Read ef0ef92fb7358ae94bab089940adfd2a
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+addDependentFile "/home/baber/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h"
+addDependentFile "/usr/include/stdc-predef.h"
+addDependentFile "src/Tokens.x"
+addDependentFile "/home/baber/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcconfig.h"
+addDependentFile "/home/baber/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcplatform.h"
+addDependentFile "/home/baber/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcautoconf.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h"
+86ad92d29675edc3ce92324eb3327b00
+  $fEqToken :: GHC.Classes.Eq Tokens.Token
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Tokens.Token Tokens.$fEqToken_$c== Tokens.$fEqToken_$c/= -}
+86ad92d29675edc3ce92324eb3327b00
+  $fEqToken_$c/= :: Tokens.Token -> Tokens.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a :: Tokens.Token b :: Tokens.Token ->
+                 case Tokens.$fEqToken_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+86ad92d29675edc3ce92324eb3327b00
+  $fEqToken_$c== :: Tokens.Token -> Tokens.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ ds :: Tokens.Token ds1 :: Tokens.Token ->
+                 case ds of wild {
+                   DEFAULT
+                   -> case ds1 of x1 { DEFAULT ->
+                      GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==#
+                           (GHC.Prim.dataToTag# @ Tokens.Token wild)
+                           (GHC.Prim.dataToTag# @ Tokens.Token x1)) }
+                   Tokens.TokenInt a1
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Tokens.Token wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 0 -> GHC.Types.True }
+                        Tokens.TokenInt b1 -> GHC.Classes.eqInt a1 b1 }
+                   Tokens.TokenSym a1
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.dataToTag# @ Tokens.Token wild1 of wild2 {
+                             DEFAULT -> GHC.Types.False 1 -> GHC.Types.True }
+                        Tokens.TokenSym b1 -> GHC.Base.eqString a1 b1 } }) -}
+bb95482933238d1b77cb38d255001750
+  $fFunctorAlexLastAcc :: GHC.Base.Functor Tokens.AlexLastAcc
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Tokens.AlexLastAcc
+                  Tokens.$fFunctorAlexLastAcc_$cfmap
+                  Tokens.$fFunctorAlexLastAcc_$c<$ -}
+bb95482933238d1b77cb38d255001750
+  $fFunctorAlexLastAcc_$c<$ ::
+    a -> Tokens.AlexLastAcc b -> Tokens.AlexLastAcc a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b eta :: a ds :: Tokens.AlexLastAcc b ->
+                 case ds of wild {
+                   Tokens.AlexNone -> Tokens.AlexNone @ a
+                   Tokens.AlexLastAcc x y dt -> Tokens.AlexLastAcc @ a eta y dt
+                   Tokens.AlexLastSkip x dt -> Tokens.AlexLastSkip @ a x dt }) -}
+bb95482933238d1b77cb38d255001750
+  $fFunctorAlexLastAcc_$cfmap ::
+    (a -> b) -> Tokens.AlexLastAcc a -> Tokens.AlexLastAcc b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b ds :: a -> b ds1 :: Tokens.AlexLastAcc a ->
+                 case ds1 of wild {
+                   Tokens.AlexNone -> Tokens.AlexNone @ b
+                   Tokens.AlexLastAcc x y dt -> Tokens.AlexLastAcc @ b (ds x) y dt
+                   Tokens.AlexLastSkip x dt -> Tokens.AlexLastSkip @ b x dt }) -}
+86ad92d29675edc3ce92324eb3327b00
+  $fShowToken :: GHC.Show.Show Tokens.Token
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Tokens.Token
+                  Tokens.$fShowToken_$cshowsPrec
+                  Tokens.$fShowToken_$cshow
+                  Tokens.$fShowToken_$cshowList -}
+86ad92d29675edc3ce92324eb3327b00
+  $fShowToken1 :: Tokens.Token -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Tokens.$fShowToken_$cshowsPrec Tokens.$fShowToken2) -}
+d422c17bc21052dc24974e5e74b35b42
+  $fShowToken2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+86ad92d29675edc3ce92324eb3327b00
+  $fShowToken_$cshow :: Tokens.Token -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Tokens.Token ->
+                 Tokens.$fShowToken_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+86ad92d29675edc3ce92324eb3327b00
+  $fShowToken_$cshowList :: [Tokens.Token] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Tokens.Token
+                   Tokens.$fShowToken1) -}
+86ad92d29675edc3ce92324eb3327b00
+  $fShowToken_$cshowsPrec ::
+    GHC.Types.Int -> Tokens.Token -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+6b8392e220a36d4f20aa775c101fdac5
+  $walexGetByte ::
+    GHC.Types.Char
+    -> [Tokens.Byte]
+    -> GHC.Base.String
+    -> GHC.Base.Maybe (Tokens.Byte, Tokens.AlexInput)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><S,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Types.Char
+                   ww1 :: [Tokens.Byte]
+                   ww2 :: GHC.Base.String ->
+                 case ww1 of wild {
+                   []
+                   -> case ww2 of wild1 {
+                        [] -> GHC.Base.Nothing @ (Tokens.Byte, Tokens.AlexInput)
+                        : c s
+                        -> case c of wild2 { GHC.Types.C# c# ->
+                           let {
+                             ww3 :: GHC.Prim.Int# = GHC.Prim.ord# c#
+                           } in
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<=# ww3 127) of wild3 {
+                             GHC.Types.False
+                             -> case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.<=# ww3 2047) of wild4 {
+                                  GHC.Types.False
+                                  -> case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.<=# ww3 65535) of wild5 {
+                                       GHC.Types.False
+                                       -> case GHC.Base.map
+                                                 @ GHC.Types.Int
+                                                 @ GHC.Word.Word8
+                                                 Tokens.alexGetByte1
+                                                 (GHC.Types.:
+                                                    @ GHC.Types.Int
+                                                    (GHC.Types.I#
+                                                       (GHC.Prim.+#
+                                                          240
+                                                          (GHC.Prim.uncheckedIShiftRA# ww3 18)))
+                                                    (GHC.Types.:
+                                                       @ GHC.Types.Int
+                                                       (GHC.Types.I#
+                                                          (GHC.Prim.+#
+                                                             128
+                                                             (GHC.Prim.andI#
+                                                                (GHC.Prim.uncheckedIShiftRA# ww3 12)
+                                                                63)))
+                                                       (GHC.Types.:
+                                                          @ GHC.Types.Int
+                                                          (GHC.Types.I#
+                                                             (GHC.Prim.+#
+                                                                128
+                                                                (GHC.Prim.andI#
+                                                                   (GHC.Prim.uncheckedIShiftRA#
+                                                                      ww3
+                                                                      6)
+                                                                   63)))
+                                                          (GHC.Types.:
+                                                             @ GHC.Types.Int
+                                                             (GHC.Types.I#
+                                                                (GHC.Prim.+#
+                                                                   128
+                                                                   (GHC.Prim.andI# ww3 63)))
+                                                             (GHC.Types.[]
+                                                                @ GHC.Types.Int))))) of wild6 {
+                                            [] -> GHC.Base.Nothing @ (Tokens.Byte, Tokens.AlexInput)
+                                            : b bs
+                                            -> GHC.Base.Just
+                                                 @ (Tokens.Byte, Tokens.AlexInput)
+                                                 (b, (wild2, bs, s)) }
+                                       GHC.Types.True
+                                       -> case GHC.Base.map
+                                                 @ GHC.Types.Int
+                                                 @ GHC.Word.Word8
+                                                 Tokens.alexGetByte1
+                                                 (GHC.Types.:
+                                                    @ GHC.Types.Int
+                                                    (GHC.Types.I#
+                                                       (GHC.Prim.+#
+                                                          224
+                                                          (GHC.Prim.uncheckedIShiftRA# ww3 12)))
+                                                    (GHC.Types.:
+                                                       @ GHC.Types.Int
+                                                       (GHC.Types.I#
+                                                          (GHC.Prim.+#
+                                                             128
+                                                             (GHC.Prim.andI#
+                                                                (GHC.Prim.uncheckedIShiftRA# ww3 6)
+                                                                63)))
+                                                       (GHC.Types.:
+                                                          @ GHC.Types.Int
+                                                          (GHC.Types.I#
+                                                             (GHC.Prim.+#
+                                                                128
+                                                                (GHC.Prim.andI# ww3 63)))
+                                                          (GHC.Types.[]
+                                                             @ GHC.Types.Int)))) of wild6 {
+                                            [] -> GHC.Base.Nothing @ (Tokens.Byte, Tokens.AlexInput)
+                                            : b bs
+                                            -> GHC.Base.Just
+                                                 @ (Tokens.Byte, Tokens.AlexInput)
+                                                 (b, (wild2, bs, s)) } }
+                                  GHC.Types.True
+                                  -> case GHC.Base.map
+                                            @ GHC.Types.Int
+                                            @ GHC.Word.Word8
+                                            Tokens.alexGetByte1
+                                            (GHC.Types.:
+                                               @ GHC.Types.Int
+                                               (GHC.Types.I#
+                                                  (GHC.Prim.+#
+                                                     192
+                                                     (GHC.Prim.uncheckedIShiftRA# ww3 6)))
+                                               (GHC.Types.:
+                                                  @ GHC.Types.Int
+                                                  (GHC.Types.I#
+                                                     (GHC.Prim.+# 128 (GHC.Prim.andI# ww3 63)))
+                                                  (GHC.Types.[] @ GHC.Types.Int))) of wild5 {
+                                       [] -> GHC.Base.Nothing @ (Tokens.Byte, Tokens.AlexInput)
+                                       : b bs
+                                       -> GHC.Base.Just
+                                            @ (Tokens.Byte, Tokens.AlexInput)
+                                            (b, (wild2, bs, s)) } }
+                             GHC.Types.True
+                             -> case GHC.Base.map
+                                       @ GHC.Types.Int
+                                       @ GHC.Word.Word8
+                                       Tokens.alexGetByte1
+                                       (GHC.Types.:
+                                          @ GHC.Types.Int
+                                          (GHC.Types.I# ww3)
+                                          (GHC.Types.[] @ GHC.Types.Int)) of wild4 {
+                                  [] -> GHC.Base.Nothing @ (Tokens.Byte, Tokens.AlexInput)
+                                  : b bs
+                                  -> GHC.Base.Just
+                                       @ (Tokens.Byte, Tokens.AlexInput)
+                                       (b, (wild2, bs, s)) } } } }
+                   : b bs
+                   -> GHC.Base.Just
+                        @ (Tokens.Byte, Tokens.AlexInput)
+                        (b, (ww, bs, ww2)) }) -}
+eb935c3b3f55634056b1ed2913f1839f
+  $walexScanUser ::
+    GHC.Types.Char
+    -> [Tokens.Byte]
+    -> GHC.Base.String
+    -> GHC.Prim.Int#
+    -> Tokens.AlexReturn (GHC.Base.String -> Tokens.Token)
+  {- Arity: 4, Strictness: <L,U><S,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ @ t
+                   ww :: GHC.Types.Char
+                   ww1 :: [Tokens.Byte]
+                   ww2 :: GHC.Base.String
+                   ww3 :: GHC.Prim.Int# ->
+                 case Tokens.$walex_scan_tkn
+                        @ t
+                        @ Tokens.AlexInput
+                        0
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        (Tokens.AlexNone
+                           @ (GHC.Base.String -> Tokens.Token)) of ww4 { (#,#) ww5 ww6 ->
+                 case ww5 of wild {
+                   Tokens.AlexNone
+                   -> case Tokens.$walexGetByte ww ww1 ww2 of wild1 {
+                        GHC.Base.Nothing
+                        -> Tokens.AlexEOF @ (GHC.Base.String -> Tokens.Token)
+                        GHC.Base.Just ds
+                        -> Tokens.$WAlexError @ (GHC.Base.String -> Tokens.Token) ww6 }
+                   Tokens.AlexLastAcc k input''' dt
+                   -> Tokens.AlexToken
+                        @ (GHC.Base.String -> Tokens.Token)
+                        input'''
+                        dt
+                        k
+                   Tokens.AlexLastSkip input'' dt
+                   -> Tokens.AlexSkip
+                        @ (GHC.Base.String -> Tokens.Token)
+                        input''
+                        dt } }) -}
+469cf75cd59fc08dd59c4d5244ccbfcc
+  $walex_scan_tkn ::
+    GHC.Prim.Int#
+    -> GHC.Types.Char
+    -> [Tokens.Byte]
+    -> GHC.Base.String
+    -> GHC.Prim.Int#
+    -> Tokens.AlexLastAcc (GHC.Base.String -> Tokens.Token)
+    -> (# Tokens.AlexLastAcc (GHC.Base.String -> Tokens.Token),
+          Tokens.AlexInput #)
+  {- Arity: 6, Strictness: <L,U><L,U><S,U><L,U><L,U><L,1*U>,
+     Inline: [0] -}
+a2bd7ec90f349fa43c931006edb2842e
+  $wgo ::
+    GHC.Types.Char
+    -> [Tokens.Byte] -> GHC.Base.String -> [Tokens.Token]
+  {- Arity: 3, Strictness: <L,U><S,U><L,U>, Inline: [0] -}
+bcad954a1828b7bb7b7cbfb6c23bd36f
+  type role AlexAcc representational phantom
+  data AlexAcc a user = AlexAccNone | AlexAcc a | AlexAccSkip
+    Promotable
+cbe8a9c644729c6d6635e7a5e2480086
+  data AlexAddr = AlexA# GHC.Prim.Addr#
+560a3f6bc027dc25338d0c00c072a172
+  type AlexInput = (GHC.Types.Char, [Tokens.Byte], GHC.Base.String)
+bb95482933238d1b77cb38d255001750
+  data AlexLastAcc a
+    = AlexNone
+    | AlexLastAcc a !Tokens.AlexInput {-# UNPACK #-}GHC.Types.Int
+    | AlexLastSkip !Tokens.AlexInput {-# UNPACK #-}GHC.Types.Int
+ad41f7fccd429a7a30fbede8a8f3ccdd
+  data AlexReturn a
+    = AlexEOF
+    | AlexError !Tokens.AlexInput
+    | AlexSkip !Tokens.AlexInput {-# UNPACK #-}GHC.Types.Int
+    | AlexToken !Tokens.AlexInput {-# UNPACK #-}GHC.Types.Int a
+31b2be3a11908f8e16bf491dd12f09dc
+  type Byte = GHC.Word.Word8
+86ad92d29675edc3ce92324eb3327b00
+  data Token
+    = TokenInt GHC.Types.Int
+    | TokenSym GHC.Base.String
+    | TokenVar
+    | TokenIf
+    | TokenElse
+    | TokenTrue
+    | TokenFalse
+    | TokenSemiColon
+    | TokenPlus
+    | TokenEq
+    | TokenMinus
+    | TokenTimes
+    | TokenDiv
+    | TokenPow
+    | TokenLT
+    | TokenLE
+    | TokenGT
+    | TokenGE
+    | TokenComp
+    | TokenAnd
+    | TokenOr
+    | TokenNot
+    | TokenLParen
+    | TokenRParen
+    | TokenLB
+    | TokenRB
+    | TokenComma
+    | TokenColon
+    | TokenFunc
+    | TokenTInt
+    | TokenTBool
+    | TokenArrow
+    | TokenTopLevelFun
+    | TokenCase
+    | TokenOf
+    | TokenBar
+    | TokenCaseArrow
+    | TokenRaise
+    | TokenTry
+    | TokenWith
+    | TokenDot
+    | TokenType
+2a62ce560e7aa8b28e7e9d9fabd4dae7
+  alexGetByte ::
+    Tokens.AlexInput -> GHC.Base.Maybe (Tokens.Byte, Tokens.AlexInput)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(U,1*U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Tokens.AlexInput ->
+                 case w of ww { (,,) ww1 ww2 ww3 ->
+                 Tokens.$walexGetByte ww1 ww2 ww3 }) -}
+8acb60b896c9016acd66a87a69008fa0
+  alexGetByte1 :: GHC.Types.Int -> GHC.Word.Word8
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: GHC.Types.Int ->
+                 case x of wild { GHC.Types.I# x# ->
+                 GHC.Word.W8# (GHC.Prim.narrow8Word# (GHC.Prim.int2Word# x#)) }) -}
+49f672e20d36f0ed4285ed85b5594648
+  alexIndexInt16OffAddr ::
+    Tokens.AlexAddr -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ ds :: Tokens.AlexAddr off :: GHC.Prim.Int# ->
+                 case ds of wild { Tokens.AlexA# arr ->
+                 GHC.Prim.indexInt16OffAddr# arr off }) -}
+86dcae3c86a5768340e8ab2de5f45876
+  alexIndexInt32OffAddr ::
+    Tokens.AlexAddr -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ ds :: Tokens.AlexAddr off :: GHC.Prim.Int# ->
+                 case ds of wild { Tokens.AlexA# arr ->
+                 GHC.Prim.indexInt32OffAddr# arr off }) -}
+d7c1ea8affb6f982720b17c4fd460b76
+  alexInputPrevChar :: Tokens.AlexInput -> GHC.Types.Char
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (GHC.Types.Char, [Tokens.Byte], GHC.Base.String) ->
+                 case ds of wild { (,,) c ds1 ds2 -> c }) -}
+effe34f0c4ac30275fcc648384eb03f0
+  alexScan ::
+    Tokens.AlexInput
+    -> GHC.Types.Int
+    -> Tokens.AlexReturn (GHC.Base.String -> Tokens.Token)
+  {- Arity: 2, Strictness: <S(LSL),U(U,U,U)><S,1*U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ input :: Tokens.AlexInput ds :: GHC.Types.Int ->
+                 case ds of wild { GHC.Types.I# sc ->
+                 Tokens.alexScanUser
+                   @ GHC.Prim.Any
+                   (GHC.Err.undefined @ GHC.Prim.Any)
+                   input
+                   (GHC.Types.I# sc) }) -}
+942fcdd5117a7a57527943f70d696d6a
+  alexScanTokens :: GHC.Base.String -> [Tokens.Token]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ str :: GHC.Base.String ->
+                 Tokens.alexScanTokens_go
+                   (Tokens.alexScanTokens1, GHC.Types.[] @ Tokens.Byte, str)) -}
+0e584160babe4e76eaddf54f1f5558ab
+  alexScanTokens1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '\n') -}
+3d9a406517653adde4a838406caf2a7f
+  alexScanTokens_go ::
+    (GHC.Types.Char, [Tokens.Byte], GHC.Base.String) -> [Tokens.Token]
+  {- Arity: 1, Strictness: <S(LSL),1*U(U,U,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: (GHC.Types.Char, [Tokens.Byte], GHC.Base.String) ->
+                 case w of ww { (,,) ww1 ww2 ww3 -> Tokens.$wgo ww1 ww2 ww3 }) -}
+99fd15e8684ba2d839adefcf023944ee
+  alexScanUser ::
+    t
+    -> Tokens.AlexInput
+    -> GHC.Types.Int
+    -> Tokens.AlexReturn (GHC.Base.String -> Tokens.Token)
+  {- Arity: 3, Strictness: <L,A><S(LSL),U(U,U,U)><S,1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ t w :: t w1 :: Tokens.AlexInput w2 :: GHC.Types.Int ->
+                 case w1 of ww { (,,) ww1 ww2 ww3 ->
+                 case w2 of ww4 { GHC.Types.I# ww5 ->
+                 Tokens.$walexScanUser @ t ww1 ww2 ww3 ww5 } }) -}
+5abaeebf2922eb121b8d451df33a594d
+  alex_accept ::
+    GHC.Arr.Array
+      GHC.Types.Int
+      (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+  {- Unfolding: (\ @ user ->
+                 GHC.ST.runSTRep
+                   @ (GHC.Arr.Array
+                        GHC.Types.Int
+                        (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user))
+                   (Tokens.alex_accept1 @ user)) -}
+7963bfa4d0f163b71b449c2e059feef6
+  alex_accept1 ::
+    GHC.Prim.State# s
+    -> (# GHC.Prim.State# s,
+          GHC.Arr.Array
+            GHC.Types.Int
+            (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user) #)
+  {- Arity: 1,
+     Unfolding: (\ @ user @ s s1# :: GHC.Prim.State# s[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        @ s
+                        92
+                        (GHC.Arr.arrEleBottom
+                           @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user))
+                        s1# of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        0
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        ipv of s4# { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        1
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4# of s4#1 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        2
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#1 of s4#2 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        3
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#2 of s4#3 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        4
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#3 of s4#4 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        5
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#4 of s4#5 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        6
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#5 of s4#6 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        7
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#6 of s4#7 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        8
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#7 of s4#8 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        9
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#8 of s4#9 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        10
+                        (Tokens.AlexAccNone @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#9 of s4#10 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        11
+                        (Tokens.AlexAccSkip @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#10 of s4#11 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        12
+                        (Tokens.AlexAccSkip @ (GHC.Base.String -> Tokens.Token) @ user)
+                        s4#11 of s4#12 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        13
+                        (Tokens.alex_accept44 @ user)
+                        s4#12 of s4#13 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        14
+                        (Tokens.alex_accept43 @ user)
+                        s4#13 of s4#14 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        15
+                        (Tokens.alex_accept42 @ user)
+                        s4#14 of s4#15 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        16
+                        (Tokens.alex_accept41 @ user)
+                        s4#15 of s4#16 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        17
+                        (Tokens.alex_accept40 @ user)
+                        s4#16 of s4#17 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        18
+                        (Tokens.alex_accept39 @ user)
+                        s4#17 of s4#18 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        19
+                        (Tokens.alex_accept38 @ user)
+                        s4#18 of s4#19 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        20
+                        (Tokens.alex_accept37 @ user)
+                        s4#19 of s4#20 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        21
+                        (Tokens.alex_accept36 @ user)
+                        s4#20 of s4#21 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        22
+                        (Tokens.alex_accept35 @ user)
+                        s4#21 of s4#22 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        23
+                        (Tokens.alex_accept34 @ user)
+                        s4#22 of s4#23 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        24
+                        (Tokens.alex_accept33 @ user)
+                        s4#23 of s4#24 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        25
+                        (Tokens.alex_accept32 @ user)
+                        s4#24 of s4#25 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        26
+                        (Tokens.alex_accept31 @ user)
+                        s4#25 of s4#26 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        27
+                        (Tokens.alex_accept30 @ user)
+                        s4#26 of s4#27 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        28
+                        (Tokens.alex_accept29 @ user)
+                        s4#27 of s4#28 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        29
+                        (Tokens.alex_accept28 @ user)
+                        s4#28 of s4#29 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        30
+                        (Tokens.alex_accept27 @ user)
+                        s4#29 of s4#30 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        31
+                        (Tokens.alex_accept26 @ user)
+                        s4#30 of s4#31 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        32
+                        (Tokens.alex_accept25 @ user)
+                        s4#31 of s4#32 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        33
+                        (Tokens.alex_accept24 @ user)
+                        s4#32 of s4#33 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        34
+                        (Tokens.alex_accept23 @ user)
+                        s4#33 of s4#34 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        35
+                        (Tokens.alex_accept22 @ user)
+                        s4#34 of s4#35 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        36
+                        (Tokens.alex_accept21 @ user)
+                        s4#35 of s4#36 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        37
+                        (Tokens.alex_accept20 @ user)
+                        s4#36 of s4#37 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        38
+                        (Tokens.alex_accept19 @ user)
+                        s4#37 of s4#38 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        39
+                        (Tokens.alex_accept18 @ user)
+                        s4#38 of s4#39 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        40
+                        (Tokens.alex_accept17 @ user)
+                        s4#39 of s4#40 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        41
+                        (Tokens.alex_accept16 @ user)
+                        s4#40 of s4#41 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        42
+                        (Tokens.alex_accept15 @ user)
+                        s4#41 of s4#42 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        43
+                        (Tokens.alex_accept14 @ user)
+                        s4#42 of s4#43 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        44
+                        (Tokens.alex_accept13 @ user)
+                        s4#43 of s4#44 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        45
+                        (Tokens.alex_accept12 @ user)
+                        s4#44 of s4#45 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        46
+                        (Tokens.alex_accept11 @ user)
+                        s4#45 of s4#46 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        47
+                        (Tokens.alex_accept10 @ user)
+                        s4#46 of s4#47 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        48
+                        (Tokens.alex_accept9 @ user)
+                        s4#47 of s4#48 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        49
+                        (Tokens.alex_accept8 @ user)
+                        s4#48 of s4#49 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        50
+                        (Tokens.alex_accept7 @ user)
+                        s4#49 of s4#50 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        51
+                        (Tokens.alex_accept6 @ user)
+                        s4#50 of s4#51 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        52
+                        (Tokens.alex_accept5 @ user)
+                        s4#51 of s4#52 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        53
+                        (Tokens.alex_accept5 @ user)
+                        s4#52 of s4#53 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        54
+                        (Tokens.alex_accept5 @ user)
+                        s4#53 of s4#54 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        55
+                        (Tokens.alex_accept5 @ user)
+                        s4#54 of s4#55 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        56
+                        (Tokens.alex_accept5 @ user)
+                        s4#55 of s4#56 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        57
+                        (Tokens.alex_accept5 @ user)
+                        s4#56 of s4#57 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        58
+                        (Tokens.alex_accept5 @ user)
+                        s4#57 of s4#58 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        59
+                        (Tokens.alex_accept5 @ user)
+                        s4#58 of s4#59 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        60
+                        (Tokens.alex_accept5 @ user)
+                        s4#59 of s4#60 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        61
+                        (Tokens.alex_accept5 @ user)
+                        s4#60 of s4#61 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        62
+                        (Tokens.alex_accept5 @ user)
+                        s4#61 of s4#62 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        63
+                        (Tokens.alex_accept5 @ user)
+                        s4#62 of s4#63 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        64
+                        (Tokens.alex_accept5 @ user)
+                        s4#63 of s4#64 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        65
+                        (Tokens.alex_accept5 @ user)
+                        s4#64 of s4#65 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        66
+                        (Tokens.alex_accept5 @ user)
+                        s4#65 of s4#66 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        67
+                        (Tokens.alex_accept5 @ user)
+                        s4#66 of s4#67 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        68
+                        (Tokens.alex_accept5 @ user)
+                        s4#67 of s4#68 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        69
+                        (Tokens.alex_accept5 @ user)
+                        s4#68 of s4#69 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        70
+                        (Tokens.alex_accept5 @ user)
+                        s4#69 of s4#70 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        71
+                        (Tokens.alex_accept5 @ user)
+                        s4#70 of s4#71 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        72
+                        (Tokens.alex_accept5 @ user)
+                        s4#71 of s4#72 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        73
+                        (Tokens.alex_accept5 @ user)
+                        s4#72 of s4#73 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        74
+                        (Tokens.alex_accept5 @ user)
+                        s4#73 of s4#74 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        75
+                        (Tokens.alex_accept5 @ user)
+                        s4#74 of s4#75 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        76
+                        (Tokens.alex_accept5 @ user)
+                        s4#75 of s4#76 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        77
+                        (Tokens.alex_accept5 @ user)
+                        s4#76 of s4#77 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        78
+                        (Tokens.alex_accept5 @ user)
+                        s4#77 of s4#78 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        79
+                        (Tokens.alex_accept5 @ user)
+                        s4#78 of s4#79 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        80
+                        (Tokens.alex_accept5 @ user)
+                        s4#79 of s4#80 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        81
+                        (Tokens.alex_accept5 @ user)
+                        s4#80 of s4#81 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        82
+                        (Tokens.alex_accept5 @ user)
+                        s4#81 of s4#82 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        83
+                        (Tokens.alex_accept5 @ user)
+                        s4#82 of s4#83 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        84
+                        (Tokens.alex_accept5 @ user)
+                        s4#83 of s4#84 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        85
+                        (Tokens.alex_accept5 @ user)
+                        s4#84 of s4#85 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        86
+                        (Tokens.alex_accept5 @ user)
+                        s4#85 of s4#86 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        87
+                        (Tokens.alex_accept5 @ user)
+                        s4#86 of s4#87 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        88
+                        (Tokens.alex_accept5 @ user)
+                        s4#87 of s4#88 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        89
+                        (Tokens.alex_accept5 @ user)
+                        s4#88 of s4#89 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        90
+                        (Tokens.alex_accept4 @ user)
+                        s4#89 of s4#90 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        91
+                        (Tokens.alex_accept3 @ user)
+                        s4#90 of s4#91 { DEFAULT ->
+                 case GHC.Prim.unsafeFreezeArray#
+                        @ s
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                        ipv1
+                        s4#91 of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Arr.Array
+                      @ GHC.Types.Int
+                      @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user)
+                      Tokens.$fShowToken2
+                      Tokens.alex_accept2
+                      92
+                      ipv3 #) } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } }) -}
+397d62bcbc5943d765834ae8b9084df7
+  alex_accept10 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_36 @ GHC.Base.String)) -}
+b2a20638ffe01b5e46c35282b0994cad
+  alex_accept11 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_35 @ GHC.Base.String)) -}
+467d340f40e2e18f2835b1c01d8eedfd
+  alex_accept12 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_34 @ GHC.Base.String)) -}
+6c29dc3f3a9fff300f12026c4ad15a73
+  alex_accept13 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_33 @ GHC.Base.String)) -}
+4244cf2cec914730ac61a315d8ebd932
+  alex_accept14 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_32 @ GHC.Base.String)) -}
+af8be0e2fd32779fa5af057c50d10b39
+  alex_accept15 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_31 @ GHC.Base.String)) -}
+c6a3682f1711ebde9839845c7542f571
+  alex_accept16 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_30 @ GHC.Base.String)) -}
+fc71236fbfc80a3778e62cbeae00409f
+  alex_accept17 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_29 @ GHC.Base.String)) -}
+e83d7f21ffebdad9439b3db9f29d9e14
+  alex_accept18 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_28 @ GHC.Base.String)) -}
+416351fef6a8da8526906fa8d53d6d53
+  alex_accept19 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_27 @ GHC.Base.String)) -}
+d05ce21e72add19719fac8aa84b7fe13
+  alex_accept2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 91) -}
+59ea3e3e8f759336b42c8ccf0e22aec4
+  alex_accept20 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_26 @ GHC.Base.String)) -}
+586312d4353378281fe144fa1f72b7e5
+  alex_accept21 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_25 @ GHC.Base.String)) -}
+0622f1e91fb1bb8ee7a11155e8fd2447
+  alex_accept22 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_24 @ GHC.Base.String)) -}
+d75ff5af3ede53e8a83e17be9a7f1588
+  alex_accept23 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_23 @ GHC.Base.String)) -}
+554401d62f18d37d933db17ae634b94f
+  alex_accept24 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_22 @ GHC.Base.String)) -}
+7f03c536bffdd5077fd20c756b23da61
+  alex_accept25 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_21 @ GHC.Base.String)) -}
+392cc099d33e14b2cba6f175c54fa3c8
+  alex_accept26 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_20 @ GHC.Base.String)) -}
+a61f8a3649cb7bb9e164a3aa64de71e4
+  alex_accept27 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_19 @ GHC.Base.String)) -}
+3b12a5f006d64d56736788f75b76db58
+  alex_accept28 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_18 @ GHC.Base.String)) -}
+93b6f0229aa611228e80532dc5e8873b
+  alex_accept29 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_17 @ GHC.Base.String)) -}
+04854f4e517d23490935e011936d6795
+  alex_accept3 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_43 @ GHC.Base.String)) -}
+08cb05ff181bad1f7bd306f8e0142450
+  alex_accept30 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_16 @ GHC.Base.String)) -}
+60da53a1acf1589bb5eb2a5d8056910e
+  alex_accept31 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_15 @ GHC.Base.String)) -}
+1c6d539d5df1e6961a30031d83c959db
+  alex_accept32 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   Tokens.alex_action_14) -}
+a1be3209ba02448e8aea6bbf43641af0
+  alex_accept33 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_13 @ GHC.Base.String)) -}
+68710c0e092f8bf180ae055ba1de3b49
+  alex_accept34 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_12 @ GHC.Base.String)) -}
+7d8bee9faac1e0a369c462733c1f1763
+  alex_accept35 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_11 @ GHC.Base.String)) -}
+52d49c6cfcd62450ed4a53078ef872f6
+  alex_accept36 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_10 @ GHC.Base.String)) -}
+266b19f6635fc419f9d5a8bb045c848b
+  alex_accept37 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_9 @ GHC.Base.String)) -}
+c679256e52e4cddf7dff008e39f5d776
+  alex_accept38 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_8 @ GHC.Base.String)) -}
+387935538f3a86420fc4f7631449844b
+  alex_accept39 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_7 @ GHC.Base.String)) -}
+c2920aa2a2f407d655dd818237762b56
+  alex_accept4 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_42 @ GHC.Base.String)) -}
+c9ce6c88276dc601b29e6aa0db6bba51
+  alex_accept40 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_6 @ GHC.Base.String)) -}
+fb0083647f9f22337bc3d609cdfb9c80
+  alex_accept41 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_5 @ GHC.Base.String)) -}
+48363c20d128cc8a644e7340b2f3f72f
+  alex_accept42 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_4 @ GHC.Base.String)) -}
+83a3e1b94bfaf10a8e20c1fe23e0ce4e
+  alex_accept43 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_3 @ GHC.Base.String)) -}
+b087d1cb0076e4f075a92d63b0277b6c
+  alex_accept44 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_2 @ GHC.Base.String)) -}
+9debf0e55dc200c7814775fac9e8a074
+  alex_accept5 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   Tokens.TokenSym) -}
+7eadc5f2c500e0d8cff6301f58c4b6e1
+  alex_accept6 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_40 @ GHC.Base.String)) -}
+3a89af019431f2e8ce722a6b39f4d26c
+  alex_accept7 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_39 @ GHC.Base.String)) -}
+57c506e1a11bdad61277092ca4023b38
+  alex_accept8 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_38 @ GHC.Base.String)) -}
+5ad8ba164fb2063cb0d13d96ba3ce355
+  alex_accept9 ::
+    Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) user
+  {- HasNoCafRefs,
+     Unfolding: (\ @ user ->
+                 Tokens.AlexAcc
+                   @ (GHC.Base.String -> Tokens.Token)
+                   @ user
+                   (Tokens.alex_action_37 @ GHC.Base.String)) -}
+6680ffc176cec92da318fb7195a1d7f3
+  alex_action_1 :: GHC.Types.Int
+  {- Strictness: b -}
+fc105686c962aa24a5597084cd843cef
+  alex_action_10 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenTry) -}
+a5c1dfb5ad69072d7728ab0234e5ebc3
+  alex_action_11 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenWith) -}
+e8fc29aa1d1b0e2bd85bffeb6e559073
+  alex_action_12 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenType) -}
+8010582da2c6fddc6d93d91d8710443d
+  alex_action_13 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenBar) -}
+263163f09dffddb14ff0b1ee27f11e54
+  alex_action_14 :: GHC.Base.String -> Tokens.Token
+  {- Arity: 1, Strictness: <L,U>m1, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Base.String ->
+                 Tokens.TokenInt
+                   (case Text.Read.readEither6
+                           @ GHC.Types.Int
+                           (Text.ParserCombinators.ReadP.run
+                              @ GHC.Types.Int
+                              Tokens.alex_action_48
+                              w) of wild {
+                      [] -> Tokens.alex_action_47
+                      : x ds
+                      -> case ds of wild1 {
+                           [] -> x : ipv ipv1 -> Tokens.alex_action_1 } })) -}
+712ee29876af32fd4d2f0e5c1a71b47c
+  alex_action_15 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenSemiColon) -}
+7152ff5ae3beb81f632c074d013d074b
+  alex_action_16 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenEq) -}
+4a088a30a057539b5c8b0612f6b4fe9a
+  alex_action_17 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenPlus) -}
+7d7e7a966ced195f7f72eca6f320ecee
+  alex_action_18 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenMinus) -}
+7e5318ae5c093de77484eb44da396d59
+  alex_action_19 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenTimes) -}
+e11302c2f8f19a718b550d5c47163342
+  alex_action_2 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenVar) -}
+2667411139b6358c9b1ca24b40991c8e
+  alex_action_20 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenDiv) -}
+78e84bac689b4e053d7a2e91e2d64965
+  alex_action_21 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenPow) -}
+65c28eb4198138936a5bbbb0777cbfc6
+  alex_action_22 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenLT) -}
+85d38051d7ffe37df1b37c87560a689a
+  alex_action_23 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenLE) -}
+8f47cf3861dfd248955b58b4257ea14b
+  alex_action_24 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenCaseArrow) -}
+762c9b1d172ef178485ce45548464be2
+  alex_action_25 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenGE) -}
+5950479b9be44439725e35ea3ec0380f
+  alex_action_26 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenGT) -}
+cdc606cb1d9f99f135e48cf79c939c02
+  alex_action_27 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenComp) -}
+61433648f7f59ab4f32ab925a83f91a4
+  alex_action_28 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenAnd) -}
+407cd799a1125d7ef7a199eee517c19a
+  alex_action_29 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenOr) -}
+2b29c758625d61e289fcc8fa9cbb888d
+  alex_action_3 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenIf) -}
+d7fe09632b39f9dc090cf8cb3dfdee25
+  alex_action_30 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenNot) -}
+68d72cab1482b77b5a47cce9e78eebf6
+  alex_action_31 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenLParen) -}
+2f2f0b327f14236c3399b9dd60b41fd8
+  alex_action_32 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenRParen) -}
+c195cd2b4b33aaeda19fd699c210fd99
+  alex_action_33 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenLB) -}
+f92a8b4b3f857b305a30cc486ec79336
+  alex_action_34 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenRB) -}
+e58a12f0938d99675bd6cc1178b26491
+  alex_action_35 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenComma) -}
+42065e92cab47e29ad5191879ad2d27c
+  alex_action_36 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenColon) -}
+7ce6c7f5f04bcd6502f2ae124f7c84a0
+  alex_action_37 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenArrow) -}
+3034875da2eded68b74dbc5c2b84a7c2
+  alex_action_38 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenFunc) -}
+296ca7bcde901fa384a3d03a86e26155
+  alex_action_39 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenTInt) -}
+8998a53ece80094dd2e5dad6402110b4
+  alex_action_4 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenElse) -}
+781cfa739f18c9fd9499728442d9a4d4
+  alex_action_40 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenTBool) -}
+4fb4b0f1f622d4fb71c6a75b5e7d8baf
+  alex_action_41 :: GHC.Base.String -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (0, True, True) Tokens.TokenSym -}
+4ff284d0b27bcaf39dd3f6b97e34171d
+  alex_action_42 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenTopLevelFun) -}
+1437d5c278a95496af9b5f11a73678c1
+  alex_action_43 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenDot) -}
+b43c8a1f8be7ced2c2a7161ad88c981a
+  alex_action_47 :: GHC.Types.Int
+  {- Strictness: b -}
+024ccaa64b7d1dd3d571ac7f92540df6
+  alex_action_48 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: ((GHC.Read.$fReadInt3
+                    GHC.Read.$fReadInt_$sconvertInt
+                    Text.ParserCombinators.ReadPrec.minPrec)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <GHC.Types.Int>_R)
+                   @ GHC.Types.Int
+                   (Text.Read.readEither5 @ GHC.Types.Int)) -}
+ba80e42002ef9a7d22333d6166b55ee9
+  alex_action_5 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenTrue) -}
+0a02c88d99fcdebcfbacb1ff5a7577b0
+  alex_action_6 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenFalse) -}
+088884d627345ce4d1de7c017e306a35
+  alex_action_7 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenCase) -}
+facbc1db464241e6a4671616e1f5ee92
+  alex_action_8 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenOf) -}
+54b80d852d6cb506963495ce85dd6d00
+  alex_action_9 :: t -> Tokens.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t s :: t -> Tokens.TokenRaise) -}
+d3fc7acb64ea2b7380e04177418911fe
+  alex_base :: Tokens.AlexAddr
+  {- HasNoCafRefs, Strictness: m -}
+b13499318fe3572e1064aa652050b4b1
+  alex_check :: Tokens.AlexAddr
+  {- HasNoCafRefs, Strictness: m -}
+92baef686ca828f8b671a1603bbd7348
+  alex_deflt :: Tokens.AlexAddr
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Tokens.AlexA#
+                   "\\255\\255\n\
+                   \\NUL\n\
+                   \\NUL\STX\NUL\STX\NUL\\255\\255\\255\\255\\255\\255\f\NUL\f\NUL\f\NUL\\255\\255\f\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255"#) -}
+5f0913147ce1f4345b87b719e20368f5
+  alex_scan_tkn ::
+    t
+    -> t1
+    -> GHC.Prim.Int#
+    -> Tokens.AlexInput
+    -> GHC.Prim.Int#
+    -> Tokens.AlexLastAcc (GHC.Base.String -> Tokens.Token)
+    -> (Tokens.AlexLastAcc (GHC.Base.String -> Tokens.Token),
+        Tokens.AlexInput)
+  {- Arity: 6,
+     Strictness: <L,A><L,A><L,U><S(LSL),1*U(U,U,U)><L,U><L,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ t
+                   @ t1
+                   w :: t
+                   w1 :: t1
+                   w2 :: GHC.Prim.Int#
+                   w3 :: Tokens.AlexInput
+                   w4 :: GHC.Prim.Int#
+                   w5 :: Tokens.AlexLastAcc (GHC.Base.String -> Tokens.Token) ->
+                 case w3 of ww { (,,) ww1 ww2 ww3 ->
+                 case Tokens.$walex_scan_tkn
+                        @ t
+                        @ t1
+                        w2
+                        ww1
+                        ww2
+                        ww3
+                        w4
+                        w5 of ww4 { (#,#) ww5 ww6 ->
+                 (ww5, ww6) } }) -}
+d71a9f0a003a478388cf0492e90c9fcc
+  alex_tab_size :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 8) -}
+7779659cf7f731ec9a3a6c5e1cb8cd14
+  alex_table :: Tokens.AlexAddr
+  {- HasNoCafRefs, Strictness: m -}
+9a8bff8dd7e339d61a5d551f59db5cc8
+  quickIndex ::
+    GHC.Arr.Array
+      GHC.Types.Int
+      (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) GHC.Prim.Any)
+    -> GHC.Types.Int
+    -> Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) GHC.Prim.Any
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSLL),1*U(1*H,1*H,A,U)><S,1*U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ eta :: GHC.Arr.Array
+                            GHC.Types.Int
+                            (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) GHC.Prim.Any)
+                   eta1 :: GHC.Types.Int ->
+                 case eta of wild { GHC.Arr.Array ds2 ds3 dt arr# ->
+                 case eta1 of wild1 { GHC.Types.I# i# ->
+                 case GHC.Prim.indexArray#
+                        @ (Tokens.AlexAcc (GHC.Base.String -> Tokens.Token) GHC.Prim.Any)
+                        arr#
+                        i# of ds4 { (##) ipv ->
+                 ipv } } }) -}
+90e5a507079640fb2cf019ee56b3bf75
+  scanTokens :: GHC.Base.String -> [Tokens.Token]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True) Tokens.alexScanTokens -}
+309e904703c833170d760154b0c412e3
+  utf8Encode :: GHC.Types.Char -> [GHC.Word.Word8]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: GHC.Types.Char ->
+                 case x of wild { GHC.Types.C# c# ->
+                 GHC.Base.build
+                   @ GHC.Word.Word8
+                   (\ @ b1
+                      c :: GHC.Word.Word8 -> b1 -> b1[OneShot]
+                      n :: b1[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Int
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Word.Word8
+                         @ b1
+                         @ GHC.Types.Int
+                         c
+                         Tokens.alexGetByte1)
+                      n
+                      (Tokens.utf8Encode1 (GHC.Types.I# (GHC.Prim.ord# c#)))) }) -}
+93635adc955e5c0b8d417501b7f3e4e9
+  utf8Encode1 :: GHC.Types.Int -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m2,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Types.Int ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww1 127) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww1 2047) of wild1 {
+                        GHC.Types.False
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<=# ww1 65535) of wild2 {
+                             GHC.Types.False
+                             -> GHC.Types.:
+                                  @ GHC.Types.Int
+                                  (GHC.Types.I#
+                                     (GHC.Prim.+# 240 (GHC.Prim.uncheckedIShiftRA# ww1 18)))
+                                  (GHC.Types.:
+                                     @ GHC.Types.Int
+                                     (GHC.Types.I#
+                                        (GHC.Prim.+#
+                                           128
+                                           (GHC.Prim.andI#
+                                              (GHC.Prim.uncheckedIShiftRA# ww1 12)
+                                              63)))
+                                     (GHC.Types.:
+                                        @ GHC.Types.Int
+                                        (GHC.Types.I#
+                                           (GHC.Prim.+#
+                                              128
+                                              (GHC.Prim.andI#
+                                                 (GHC.Prim.uncheckedIShiftRA# ww1 6)
+                                                 63)))
+                                        (GHC.Types.:
+                                           @ GHC.Types.Int
+                                           (GHC.Types.I# (GHC.Prim.+# 128 (GHC.Prim.andI# ww1 63)))
+                                           (GHC.Types.[] @ GHC.Types.Int))))
+                             GHC.Types.True
+                             -> GHC.Types.:
+                                  @ GHC.Types.Int
+                                  (GHC.Types.I#
+                                     (GHC.Prim.+# 224 (GHC.Prim.uncheckedIShiftRA# ww1 12)))
+                                  (GHC.Types.:
+                                     @ GHC.Types.Int
+                                     (GHC.Types.I#
+                                        (GHC.Prim.+#
+                                           128
+                                           (GHC.Prim.andI# (GHC.Prim.uncheckedIShiftRA# ww1 6) 63)))
+                                     (GHC.Types.:
+                                        @ GHC.Types.Int
+                                        (GHC.Types.I# (GHC.Prim.+# 128 (GHC.Prim.andI# ww1 63)))
+                                        (GHC.Types.[] @ GHC.Types.Int))) }
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Int
+                             (GHC.Types.I#
+                                (GHC.Prim.+# 192 (GHC.Prim.uncheckedIShiftRA# ww1 6)))
+                             (GHC.Types.:
+                                @ GHC.Types.Int
+                                (GHC.Types.I# (GHC.Prim.+# 128 (GHC.Prim.andI# ww1 63)))
+                                (GHC.Types.[] @ GHC.Types.Int)) }
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Int
+                        (GHC.Types.I# ww1)
+                        (GHC.Types.[] @ GHC.Types.Int) } }) -}
+instance GHC.Classes.Eq [Tokens.Token] = Tokens.$fEqToken
+instance GHC.Base.Functor [Tokens.AlexLastAcc]
+  = Tokens.$fFunctorAlexLastAcc
+instance GHC.Show.Show [Tokens.Token] = Tokens.$fShowToken
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

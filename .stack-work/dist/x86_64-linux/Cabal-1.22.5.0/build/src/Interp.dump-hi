@@ -1,0 +1,122 @@
+
+==================== FINAL INTERFACE ====================
+2020-05-16 13:16:11.813756 UTC
+
+interface proje_60jq5xC5Q73LBw1qExzNbC:Interp 7103
+  interface hash: d849738695a588b67a5fed35f02c3924
+  ABI hash: ed63e5c4b276e78cbc848c6012a13c8a
+  export-list hash: 6365099cde576b78791e5cfa99d493c0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interp.binary
+  Interp.evaluate
+  Interp.execute
+  Interp.unary
+module dependencies: Declare Parser Tokens
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  Declare 36a0ecee0bdf5fa089ab40e6042e3073
+  exports: ecea67ca7d8b61491bf9fcde82f1547e
+  Add dff90c1fa96160658ad433b4d3c21806
+  And 4605af560dd68a053ea92f22ae51c04b
+  Bin 5cbc33277e65730834c78d26a8466016
+  BinaryOp 5ac232d165763d69aae850963907cefd
+  BoolV d702e09f1b7c779e49b01f3ba0930ec6
+  Call 14908e14c36021ec9223fdc4cab1f6af
+  CallFC 4cae6a3e338cc4c3f0b16d7841074b00
+  CaseV b37ea43c2de7bc8f2d71f887ce7d801e
+  Decl a70c7747f4040f538516df3705641493
+  Div 588466427b2ef2bc85911f8cbc1ad3c4
+  EQ 50991fc97ef3d6286dd61718d4e9270d
+  Env 1a3d404dd25e8820b60a97978095a605
+  Exp 1a3d404dd25e8820b60a97978095a605
+  Fun 794859ef0e06455c5d0cda060599eb66
+  FunEnv 36a33c9bb49a9742300c6708a941486f
+  Function b0bc9200c6db044b018a764d93037a1e
+  GE 5c8bff0ec44ce9693a27efd7eeab0ceb
+  GT 6e3349dfd8ea1d05cde949aca4a60e21
+  If 1c943e94bc002f188cf4bde812679dfe
+  IntV f655414e503ed2e05ab11747d34b2831
+  LE 4f9aba1e28280a2c23c4360c4eca0923
+  LT 76c8d6a8e111fc9744fd89c3bd1fa084
+  Lit 7e406791ab07fb4277a0792c3d9a1c77
+  Mult fbf814b2e16bb3f08c436f025e7871b1
+  Neg 27529bfbc9149a1f8d971a9b01118e11
+  Not 6a6e7372412c43d98bf24da834254537
+  Or bc0e24150d04717a3c226ec454225e3e
+  Program af1d2a49dc57e4927a1d1892652c274c
+  Program 7962fd0adca4b3bfb5049905b12e7f03
+  Raise 12f1cfbae62eaae217abd6b22f325188
+  RaiseV 622d9818141db88debd243e67daf802e
+  Rcd c0c3555641bffeb7c5da462bdc94d212
+  RcdProj 40c4668d5d283219b33e58a957701202
+  Sub 02ed0d4f23fcde787c183b6c7a2186b7
+  Try 8f0d69000bc0e5ca8763da9ffd98e9b1
+  Unary bf89b01e5b3e6f1699414224578f6992
+  UnaryOp c82a4fb3290295286a792b122c93646d
+  Value 1a3d404dd25e8820b60a97978095a605
+  Var e8c95f391fe4b299aa5c991f328354aa
+  Varnt d3b726d8635f51e59b7f84758ae9114d
+  findFunction a1c51abebc0e0eb4a789340fab7f54cf
+import  -/  Parser 29416e445225d752b50ec2c276c5e1c5
+  exports: c3ce69ad3529b8f25abcf25fbbb696b3
+995a0c0ac862df89340dfd25466ae398
+  binary ::
+    Declare.BinaryOp
+    -> Declare.Value -> Declare.Value -> GHC.Base.Maybe Declare.Value
+  {- Arity: 3, Strictness: <S,1*U><L,1*U><L,1*U> -}
+6d469edf98e84eedd6f4555a1e17598b
+  evaluate ::
+    Declare.Exp -> Declare.Env -> Declare.FunEnv -> Declare.Value
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U> -}
+eff007ebc1ce500e3ea18b552abbc4a5
+  execute :: Declare.Program -> Declare.Value
+  {- Arity: 1, Strictness: <S(LLS),1*U(A,U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Declare.Program ->
+                 case ds of wild { Declare.Program tenv funEnv main ->
+                 Interp.evaluate
+                   main
+                   (GHC.Types.[] @ (GHC.Base.String, Declare.Value))
+                   funEnv }) -}
+05d22f4c7ecfa4f849db675f3ced7137
+  unary :: Declare.UnaryOp -> Declare.Value -> Declare.Value
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ ds :: Declare.UnaryOp ds1 :: Declare.Value ->
+                 case ds of wild {
+                   Declare.Neg
+                   -> case ds1 of wild1 {
+                        DEFAULT -> Interp.unary1
+                        Declare.IntV i -> Declare.IntV (GHC.Num.$fNumInt_$cnegate i) }
+                   Declare.Not
+                   -> case ds1 of wild1 {
+                        DEFAULT -> Interp.unary1
+                        Declare.BoolV b -> Declare.BoolV (GHC.Classes.not b) } }) -}
+7736e3d8b15f67458c6bf95be7268041
+  unary1 :: Declare.Value
+  {- Strictness: b -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

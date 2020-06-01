@@ -1,0 +1,145 @@
+
+==================== FINAL INTERFACE ====================
+2020-05-16 13:16:12.509651 UTC
+
+interface main@main:Main 7103
+  interface hash: d22e9494975e22c8e8a416b8a84176c7
+  ABI hash: 728e0d975beec86e5f2e52de78e07c4d
+  export-list hash: d98d6c83c3ca4c8a0cfeb9238b9dea6e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d62e0c30468bb7394c50e1738e7dee78
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+                      project-0.1.0.0@proje_60jq5xC5Q73LBw1qExzNbC
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.Environment ba6e36000c8274703cf7786fbe8d0f6c
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  project-0.1.0.0@proje_60jq5xC5Q73LBw1qExzNbC:Declare 36a0ecee0bdf5fa089ab40e6042e3073
+import  -/  project-0.1.0.0@proje_60jq5xC5Q73LBw1qExzNbC:Interp ed63e5c4b276e78cbc848c6012a13c8a
+import  -/  project-0.1.0.0@proje_60jq5xC5Q73LBw1qExzNbC:Parser 29416e445225d752b50ec2c276c5e1c5
+import  -/  project-0.1.0.0@proje_60jq5xC5Q73LBw1qExzNbC:TypeCheck 4f51550cef8d0ae496f931aa0ad8e858
+4701e95b7ec4a175198366ef7df1696b
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+74ed54668432b415748a9dc3676f9245
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.Environment.getArgs1 s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.FD.openFile1
+                        (GHC.List.head @ GHC.IO.FilePath ipv1)
+                        GHC.IO.IOMode.ReadMode
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv3
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case (Parser.parseExpr_happyNewToken
+                         0
+                         (Parser.notHappyAtAll @ Parser.Happy_IntList)
+                         (Parser.notHappyAtAll
+                            @ (Parser.HappyStk
+                                 (Parser.HappyAbsSyn
+                                    Declare.Program
+                                    [(Declare.Type, GHC.Base.String, Declare.Function)]
+                                    (Declare.Type, GHC.Base.String, Declare.Function)
+                                    [(GHC.Base.String, Declare.Type)]
+                                    (GHC.Base.String, Declare.Type)
+                                    [(GHC.Base.String, Declare.Type)]
+                                    Declare.Type
+                                    [(GHC.Base.String, Declare.Type)]
+                                    (GHC.Base.String, Declare.Type)
+                                    Declare.Exp
+                                    [(GHC.Base.String, GHC.Base.String, Declare.Exp)]
+                                    (GHC.Base.String, GHC.Base.String, Declare.Exp)
+                                    [(GHC.Base.String, Declare.Exp)]
+                                    (GHC.Base.String, Declare.Exp)
+                                    Declare.Exp
+                                    [Declare.Exp])))
+                         (Tokens.alexScanTokens ipv5))
+                        `cast`
+                      (Parser.NTCo:HappyIdentity[0]
+                           (UnivCo mkUnsafeCo representational (Parser.HappyAbsSyn
+                                                                  Declare.Program
+                                                                  [(Declare.Type,
+                                                                    GHC.Base.String,
+                                                                    Declare.Function)]
+                                                                  (Declare.Type,
+                                                                   GHC.Base.String,
+                                                                   Declare.Function)
+                                                                  [(GHC.Base.String, Declare.Type)]
+                                                                  (GHC.Base.String, Declare.Type)
+                                                                  [(GHC.Base.String, Declare.Type)]
+                                                                  Declare.Type
+                                                                  [(GHC.Base.String, Declare.Type)]
+                                                                  (GHC.Base.String, Declare.Type)
+                                                                  Declare.Exp
+                                                                  [(GHC.Base.String,
+                                                                    GHC.Base.String,
+                                                                    Declare.Exp)]
+                                                                  (GHC.Base.String,
+                                                                   GHC.Base.String,
+                                                                   Declare.Exp)
+                                                                  [(GHC.Base.String, Declare.Exp)]
+                                                                  (GHC.Base.String, Declare.Exp)
+                                                                  Declare.Exp
+                                                                  [Declare.Exp]) Declare.Program)) of ww { Declare.Program ww1 ww2 ww3 ->
+                 case TypeCheck.checkFunEnv_checkFunEnv1
+                        ww2
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, (TypeCheck.TEnv, Declare.Type))) of wild {
+                   GHC.Base.Nothing -> Main.main2 GHC.Prim.void#
+                   GHC.Base.Just fenv
+                   -> case TypeCheck.tcheck
+                             ww3
+                             (GHC.Types.[] @ (GHC.Base.String, Declare.Type))
+                             fenv of wild1 {
+                        GHC.Base.Nothing -> Main.main2 GHC.Prim.void#
+                        GHC.Base.Just ds
+                        -> GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             (Declare.$fShowValue_$cshow
+                                (Interp.evaluate
+                                   ww3
+                                   (GHC.Types.[] @ (GHC.Base.String, Declare.Value))
+                                   ww2))
+                             GHC.Types.True
+                             ipv4 } } } } } }) -}
+8841ab9a25848fbeaa343f993bdaf748
+  main2 ::
+    GHC.Prim.Void# -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <B,A>b -}
+e01609d127b1312e32782728c8381c4e
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

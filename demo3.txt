@@ -1,0 +1,3 @@
+case <age=30 : Int> of 
+| <age=x> => true
+| <name=y> => false

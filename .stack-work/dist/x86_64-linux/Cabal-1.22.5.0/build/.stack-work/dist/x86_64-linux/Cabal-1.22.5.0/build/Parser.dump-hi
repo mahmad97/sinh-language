@@ -1,0 +1,473 @@
+
+==================== FINAL INTERFACE ====================
+2020-05-16 13:16:11.424963 UTC
+
+interface proje_60jq5xC5Q73LBw1qExzNbC:Parser 7103
+  interface hash: f80cb2a41511993357da8450ce81da96
+  ABI hash: 29416e445225d752b50ec2c276c5e1c5
+  export-list hash: c3ce69ad3529b8f25abcf25fbbb696b3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 43309756800e558b71094415e5201f2b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Parser.parseExpr
+module dependencies: Declare Tokens
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 ghc-prim-0.4.0.0 integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+import  -/  array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA:Data.Array 6e22602c1cc5e362609f0924a7c0a209
+import  -/  base-4.8.2.0:Control.Applicative a8ebf5ad4932b411ad7725da68be9801
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Char c8f827952d4111ae2e47c0b105217cdb
+import  -/  base-4.8.2.0:GHC.Arr 70f35e6bfbc61995e045edb612354887
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Exts 7bdf420b67c4b8c9ccc9ea593e90bb92
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  Declare 36a0ecee0bdf5fa089ab40e6042e3073
+  exports: ecea67ca7d8b61491bf9fcde82f1547e
+  Add dff90c1fa96160658ad433b4d3c21806
+  And 4605af560dd68a053ea92f22ae51c04b
+  Bin 5cbc33277e65730834c78d26a8466016
+  BoolV d702e09f1b7c779e49b01f3ba0930ec6
+  Call 14908e14c36021ec9223fdc4cab1f6af
+  CallFC 4cae6a3e338cc4c3f0b16d7841074b00
+  CaseV b37ea43c2de7bc8f2d71f887ce7d801e
+  Decl a70c7747f4040f538516df3705641493
+  Div 588466427b2ef2bc85911f8cbc1ad3c4
+  EQ 50991fc97ef3d6286dd61718d4e9270d
+  Fun 794859ef0e06455c5d0cda060599eb66
+  Function b0bc9200c6db044b018a764d93037a1e
+  GE 5c8bff0ec44ce9693a27efd7eeab0ceb
+  GT 6e3349dfd8ea1d05cde949aca4a60e21
+  If 1c943e94bc002f188cf4bde812679dfe
+  IntV f655414e503ed2e05ab11747d34b2831
+  LE 4f9aba1e28280a2c23c4360c4eca0923
+  LT 76c8d6a8e111fc9744fd89c3bd1fa084
+  Lit 7e406791ab07fb4277a0792c3d9a1c77
+  Mult fbf814b2e16bb3f08c436f025e7871b1
+  Neg 27529bfbc9149a1f8d971a9b01118e11
+  Not 6a6e7372412c43d98bf24da834254537
+  Or bc0e24150d04717a3c226ec454225e3e
+  Program af1d2a49dc57e4927a1d1892652c274c
+  Raise 12f1cfbae62eaae217abd6b22f325188
+  Rcd c0c3555641bffeb7c5da462bdc94d212
+  RcdProj 40c4668d5d283219b33e58a957701202
+  Sub 02ed0d4f23fcde787c183b6c7a2186b7
+  TBool 278ec6997a43d210abd0e5f5c97e55d7
+  TFun 4c4ae16a4224604ffd42f353923be645
+  TInt 5f5c2fc77880f30dd04efff35e64723d
+  TRcd 11e1055b4214d89ffd491e523b97072e
+  TVarnt ccfc7d1036927b8ed5dc26e76caa3066
+  Try 8f0d69000bc0e5ca8763da9ffd98e9b1
+  TypDecl 3f42700647f59baf1f32cebe8e24d9b7
+  Unary bf89b01e5b3e6f1699414224578f6992
+  Var e8c95f391fe4b299aa5c991f328354aa
+  Varnt d3b726d8635f51e59b7f84758ae9114d
+import  -/  Tokens b16a010130639236a797af72816099bf
+  exports: da618d66bd8aaf2fe7f271e9bc0843e3
+  Token 86ad92d29675edc3ce92324eb3327b00
+  TokenAnd 51672192951e9fd79df978a1dc54d4ef
+  TokenArrow 33cad5554a457dc282264d10fe4f305e
+  TokenBar bc99368418b131bf2fefd094c46d34c9
+  TokenCase ba927f560e632a2145bac1aff180e879
+  TokenCaseArrow 903e3a38924e224221ec33990e739af2
+  TokenColon fa1787f29410178999b3bb45160de49f
+  TokenComma bafdfcecd93c38150631d30d5927bfb3
+  TokenComp 7160ead9f85badf494ca480e9b809b30
+  TokenDiv 25090eb746781eb9902f31cdc72472a7
+  TokenDot 09530f8ed9cd56a3d1180444e78b3c38
+  TokenElse 6705454df85458a551bdca224f10baa7
+  TokenEq b9fb081db232f759ed81b2a8dd208b31
+  TokenFalse 377ba4f15beec234c5cb70931cd48819
+  TokenFunc 65155f16850d6edfc97f7aba9ba1f8b8
+  TokenGE c19d676c1ff966addf598adb0a8d2f76
+  TokenGT 65a39082f1176a13e85cfe1774f828da
+  TokenIf e0bcaa17b320bc54d5ea15ea80422624
+  TokenInt 3d3c85ff5e76a279b9fe48218f211467
+  TokenLB 43066b5bee6b67e85db9a4b121ad548f
+  TokenLE 12a73a71e1a05e4c2c1e963988ed0107
+  TokenLParen b5b2e5d279d1ebdc063ef454989dcb24
+  TokenLT baa265e72a72d89aa3255f054effea16
+  TokenMinus 17599a1796f226870b19cb272a7ccc67
+  TokenNot c7b119616752bd4fed958f42f627cb88
+  TokenOf 30d2b24fcc14cf6a6941b093e9a4493b
+  TokenOr cf857332b386ba1f51b1a91fe8ee13f7
+  TokenPlus 09a1fd791c58f18c1f957b9fb31f11f0
+  TokenRB 2fd2d61b2d85dbce477676d46104f607
+  TokenRParen a181357adbaa8a49e457ec631a210cc7
+  TokenRaise d0763955afb3f212139951ede5221136
+  TokenSemiColon 22a580c77fba02ec6cc68af7519108c5
+  TokenSym 12f9df1b57d1bc6c6c9d33ff5c0cec4f
+  TokenTBool 9f14cf70dc2dbf489bb6556fd8bbebac
+  TokenTInt 57812b37f4da1ab6e72af7de5393cf97
+  TokenTimes 358489c2de3e9b34e717339a86e7778f
+  TokenTopLevelFun b78cb8aa4a8c23341b9638360d25a0ae
+  TokenTrue 89f02ab2cde75fbf63745cf4afed7917
+  TokenTry 789bc8332101ec6ca7ba2710e1faf92d
+  TokenType 227cf6da298c7168c0a4f967e23b165f
+  TokenVar eed14234cef35dd5442e22d5e078ec14
+  TokenWith aca673e12b46cb6ed63197f468e5ee80
+  scanTokens 90e5a507079640fb2cf019ee56b3bf75
+addDependentFile "/home/baber/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h"
+addDependentFile "/usr/include/stdc-predef.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h"
+fixities infixr 9 HappyStk, infixr 9 HappyStk
+fcf4c0f420586bf0110dcdf05123db49
+  $fApplicativeHappyIdentity ∷
+    GHC.Base.Applicative Parser.HappyIdentity
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Parser.HappyIdentity
+                  Parser.$fFunctorHappyIdentity
+                  Parser.$fApplicativeHappyIdentity_$cpure
+                  Parser.$fApplicativeHappyIdentity_$sap
+                  Parser.$fApplicativeHappyIdentity_$c*>
+                  Parser.$fApplicativeHappyIdentity_$c<* -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fApplicativeHappyIdentity1 ∷
+    forall a b.
+    Parser.HappyIdentity a
+    → Parser.HappyIdentity b → Parser.HappyIdentity a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a3
+                   @ b
+                   eta ∷ Parser.HappyIdentity a3
+                   eta1 ∷ Parser.HappyIdentity b →
+                 eta) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fApplicativeHappyIdentity2 ∷
+    forall a b.
+    Parser.HappyIdentity (a → b) → Parser.HappyIdentity a → b
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a3
+                   @ b
+                   m1 ∷ Parser.HappyIdentity (a3 → b)
+                   m2 ∷ Parser.HappyIdentity a3 →
+                 m1 `cast` (Parser.NTCo:HappyIdentity[0] <a3 → b>_R)
+                   m2 `cast` (Parser.NTCo:HappyIdentity[0] <a3>_R)) -}
+292fd1c2c64af4556f7ec71fab1de037
+  $fApplicativeHappyIdentity3 ∷ forall a. a → a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True) (\ @ a3 tpl ∷ a3 → tpl) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fApplicativeHappyIdentity_$c*> ∷
+    forall a b.
+    Parser.HappyIdentity a
+    → Parser.HappyIdentity b → Parser.HappyIdentity b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a3
+                   @ b
+                   eta ∷ Parser.HappyIdentity a3
+                   eta1 ∷ Parser.HappyIdentity b →
+                 eta1) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fApplicativeHappyIdentity_$c<* ∷
+    forall a b.
+    Parser.HappyIdentity a
+    → Parser.HappyIdentity b → Parser.HappyIdentity a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Parser.$fApplicativeHappyIdentity1 -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fApplicativeHappyIdentity_$cpure ∷
+    forall a. a → Parser.HappyIdentity a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Parser.$fApplicativeHappyIdentity3
+                  `cast`
+                (forall a3.
+                 <a3>_R →_R Sym (Parser.NTCo:HappyIdentity[0] <a3>_R)) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fApplicativeHappyIdentity_$sap ∷
+    forall a b.
+    Parser.HappyIdentity (a → b)
+    → Parser.HappyIdentity a → Parser.HappyIdentity b
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Parser.$fApplicativeHappyIdentity2
+                  `cast`
+                (forall a3 b.
+                 <Parser.HappyIdentity (a3 → b)>_R
+                 →_R <Parser.HappyIdentity a3>_R
+                 →_R Sym (Parser.NTCo:HappyIdentity[0] <b>_R)) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fFunctorHappyIdentity ∷ GHC.Base.Functor Parser.HappyIdentity
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Parser.HappyIdentity
+                  Parser.$fFunctorHappyIdentity_$cfmap
+                  Parser.$fFunctorHappyIdentity_$c<$ -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fFunctorHappyIdentity1 ∷
+    forall a b. a → Parser.HappyIdentity b → a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a3 @ b eta ∷ a3 eta1 ∷ Parser.HappyIdentity b → eta) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fFunctorHappyIdentity2 ∷
+    forall a b. (a → b) → Parser.HappyIdentity a → b
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a3 @ b f ∷ a3 → b ds ∷ Parser.HappyIdentity a3 →
+                 f ds `cast` (Parser.NTCo:HappyIdentity[0] <a3>_R)) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fFunctorHappyIdentity_$c<$ ∷
+    forall a b. a → Parser.HappyIdentity b → Parser.HappyIdentity a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Parser.$fFunctorHappyIdentity1
+                  `cast`
+                (forall a3 b.
+                 <a3>_R
+                 →_R <Parser.HappyIdentity b>_R
+                 →_R Sym (Parser.NTCo:HappyIdentity[0] <a3>_R)) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fFunctorHappyIdentity_$cfmap ∷
+    forall a b.
+    (a → b) → Parser.HappyIdentity a → Parser.HappyIdentity b
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Parser.$fFunctorHappyIdentity2
+                  `cast`
+                (forall a3 b.
+                 <a3 → b>_R
+                 →_R <Parser.HappyIdentity a3>_R
+                 →_R Sym (Parser.NTCo:HappyIdentity[0] <b>_R)) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fMonadHappyIdentity ∷ GHC.Base.Monad Parser.HappyIdentity
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Parser.HappyIdentity
+                  Parser.$fApplicativeHappyIdentity
+                  Parser.$fMonadHappyIdentity_$c>>=
+                  Parser.$fMonadHappyIdentity_$c>>
+                  Parser.$fApplicativeHappyIdentity_$cpure
+                  Parser.$fMonadHappyIdentity_$s$dmfail -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fMonadHappyIdentity_$c>> ∷
+    forall a b.
+    Parser.HappyIdentity a
+    → Parser.HappyIdentity b → Parser.HappyIdentity b
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a3
+                   @ b
+                   m1 ∷ Parser.HappyIdentity a3
+                   k ∷ Parser.HappyIdentity b →
+                 Parser.$fMonadHappyIdentity_$c>>=
+                   @ a3
+                   @ b
+                   m1
+                   (\ ds ∷ a3[OneShot] → k)) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fMonadHappyIdentity_$c>>= ∷
+    forall a b.
+    Parser.HappyIdentity a
+    → (a → Parser.HappyIdentity b) → Parser.HappyIdentity b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a3
+                   @ b
+                   ds ∷ Parser.HappyIdentity a3
+                   q ∷ a3 → Parser.HappyIdentity b →
+                 q ds `cast` (Parser.NTCo:HappyIdentity[0] <a3>_R)) -}
+fcf4c0f420586bf0110dcdf05123db49
+  $fMonadHappyIdentity_$s$dmfail ∷
+    forall a. GHC.Base.String → Parser.HappyIdentity a
+  {- Arity: 1, Strictness: <B,U>b,
+     Unfolding: InlineRule (-1, True, True)
+                (\ @ a3 eta ∷ [GHC.Types.Char] →
+                 GHC.Err.error @ (Parser.HappyIdentity a3) eta) -}
+ccbdc407d78835fee66ade8f769af7a8
+  type role HappyAbsSyn phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom phantom
+  newtype HappyAbsSyn t4
+                      t5
+                      t6
+                      t7
+                      t8
+                      t9
+                      t10
+                      t11
+                      t12
+                      t13
+                      t14
+                      t15
+                      t16
+                      t17
+                      t18
+                      t19
+    = HappyAbsSyn Parser.HappyAny
+a676ed83ab05e7b83487faec1bbd8fe6
+  data HappyAddr = HappyA# GHC.Prim.Addr#
+4374d8af8c717cfbdbd2d686d8a9d455
+  type HappyAny = GHC.Prim.Any
+fcf4c0f420586bf0110dcdf05123db49
+  newtype HappyIdentity a = HappyIdentity a
+    Promotable
+c5f4533a253627b62f93e47742059070
+  data HappyStk a = HappyStk a (Parser.HappyStk a)
+    RecFlag: Recursive
+    Promotable
+78a031364c377570548348d368096d32
+  data Happy_IntList = HappyCons GHC.Prim.Int# Parser.Happy_IntList
+    RecFlag: Recursive
+b5f460d1663f78a65d7b962b2184622c
+  notHappyAtAll ∷ forall a. a
+  {- Strictness: b -}
+4cc016a83ff413cb31de834d3ad6b76c
+  parseExpr ∷ GHC.Base.String → Declare.Program
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Parser.parseExpr1
+                  `cast`
+                (<GHC.Base.String>_R
+                 →_R Parser.NTCo:HappyIdentity[0]
+                         (UnivCo mkUnsafeCo representational (Parser.HappyAbsSyn
+                                                                Declare.Program
+                                                                [(Declare.Type,
+                                                                  GHC.Base.String,
+                                                                  Declare.Function)]
+                                                                (Declare.Type,
+                                                                 GHC.Base.String,
+                                                                 Declare.Function)
+                                                                [(GHC.Base.String, Declare.Type)]
+                                                                (GHC.Base.String, Declare.Type)
+                                                                [(GHC.Base.String, Declare.Type)]
+                                                                Declare.Type
+                                                                [(GHC.Base.String, Declare.Type)]
+                                                                (GHC.Base.String, Declare.Type)
+                                                                Declare.Exp
+                                                                [(GHC.Base.String,
+                                                                  GHC.Base.String,
+                                                                  Declare.Exp)]
+                                                                (GHC.Base.String,
+                                                                 GHC.Base.String,
+                                                                 Declare.Exp)
+                                                                [(GHC.Base.String, Declare.Exp)]
+                                                                (GHC.Base.String, Declare.Exp)
+                                                                Declare.Exp
+                                                                [Declare.Exp]) Declare.Program)) -}
+e60ba3cb93ef6d36deff99cf4a8583b2
+  parseExpr1 ∷
+    GHC.Base.String
+    → Parser.HappyIdentity
+        (Parser.HappyAbsSyn
+           Declare.Program
+           [(Declare.Type, GHC.Base.String, Declare.Function)]
+           (Declare.Type, GHC.Base.String, Declare.Function)
+           [(GHC.Base.String, Declare.Type)]
+           (GHC.Base.String, Declare.Type)
+           [(GHC.Base.String, Declare.Type)]
+           Declare.Type
+           [(GHC.Base.String, Declare.Type)]
+           (GHC.Base.String, Declare.Type)
+           Declare.Exp
+           [(GHC.Base.String, GHC.Base.String, Declare.Exp)]
+           (GHC.Base.String, GHC.Base.String, Declare.Exp)
+           [(GHC.Base.String, Declare.Exp)]
+           (GHC.Base.String, Declare.Exp)
+           Declare.Exp
+           [Declare.Exp])
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x ∷ GHC.Base.String →
+                 Parser.parseExpr_happyNewToken
+                   0
+                   (Parser.notHappyAtAll @ Parser.Happy_IntList)
+                   (Parser.notHappyAtAll
+                      @ (Parser.HappyStk
+                           (Parser.HappyAbsSyn
+                              Declare.Program
+                              [(Declare.Type, GHC.Base.String, Declare.Function)]
+                              (Declare.Type, GHC.Base.String, Declare.Function)
+                              [(GHC.Base.String, Declare.Type)]
+                              (GHC.Base.String, Declare.Type)
+                              [(GHC.Base.String, Declare.Type)]
+                              Declare.Type
+                              [(GHC.Base.String, Declare.Type)]
+                              (GHC.Base.String, Declare.Type)
+                              Declare.Exp
+                              [(GHC.Base.String, GHC.Base.String, Declare.Exp)]
+                              (GHC.Base.String, GHC.Base.String, Declare.Exp)
+                              [(GHC.Base.String, Declare.Exp)]
+                              (GHC.Base.String, Declare.Exp)
+                              Declare.Exp
+                              [Declare.Exp])))
+                   (Tokens.alexScanTokens x)) -}
+179e41f1e44aef5a8c8eb1b4f5754a94
+  parseExpr_happyNewToken ∷
+    GHC.Prim.Int#
+    → Parser.Happy_IntList
+    → Parser.HappyStk
+        (Parser.HappyAbsSyn
+           Declare.Program
+           [(Declare.Type, GHC.Base.String, Declare.Function)]
+           (Declare.Type, GHC.Base.String, Declare.Function)
+           [(GHC.Base.String, Declare.Type)]
+           (GHC.Base.String, Declare.Type)
+           [(GHC.Base.String, Declare.Type)]
+           Declare.Type
+           [(GHC.Base.String, Declare.Type)]
+           (GHC.Base.String, Declare.Type)
+           Declare.Exp
+           [(GHC.Base.String, GHC.Base.String, Declare.Exp)]
+           (GHC.Base.String, GHC.Base.String, Declare.Exp)
+           [(GHC.Base.String, Declare.Exp)]
+           (GHC.Base.String, Declare.Exp)
+           Declare.Exp
+           [Declare.Exp])
+    → [Tokens.Token]
+    → Parser.HappyIdentity
+        (Parser.HappyAbsSyn
+           Declare.Program
+           [(Declare.Type, GHC.Base.String, Declare.Function)]
+           (Declare.Type, GHC.Base.String, Declare.Function)
+           [(GHC.Base.String, Declare.Type)]
+           (GHC.Base.String, Declare.Type)
+           [(GHC.Base.String, Declare.Type)]
+           Declare.Type
+           [(GHC.Base.String, Declare.Type)]
+           (GHC.Base.String, Declare.Type)
+           Declare.Exp
+           [(GHC.Base.String, GHC.Base.String, Declare.Exp)]
+           (GHC.Base.String, GHC.Base.String, Declare.Exp)
+           [(GHC.Base.String, Declare.Exp)]
+           (GHC.Base.String, Declare.Exp)
+           Declare.Exp
+           [Declare.Exp])
+  {- Arity: 4, Strictness: <L,U><L,U><L,U(U,U)><S,1*U> -}
+instance GHC.Base.Applicative [Parser.HappyIdentity]
+  = Parser.$fApplicativeHappyIdentity
+instance GHC.Base.Functor [Parser.HappyIdentity]
+  = Parser.$fFunctorHappyIdentity
+instance GHC.Base.Monad [Parser.HappyIdentity]
+  = Parser.$fMonadHappyIdentity
+"SPEC/Parser $dmfail @ HappyIdentity" [ALWAYS] forall $dMonad ∷ GHC.Base.Monad
+                                                                  Parser.HappyIdentity
+  GHC.Base.$dmfail @ Parser.HappyIdentity $dMonad
+  = Parser.$fMonadHappyIdentity_$s$dmfail
+"SPEC/Parser ap @ HappyIdentity _ _" [ALWAYS] forall @ a3
+                                                     @ b
+                                                     $dMonad ∷ GHC.Base.Monad Parser.HappyIdentity
+  GHC.Base.ap @ Parser.HappyIdentity @ a3 @ b $dMonad
+  = Parser.$fApplicativeHappyIdentity_$sap @ a3 @ b
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

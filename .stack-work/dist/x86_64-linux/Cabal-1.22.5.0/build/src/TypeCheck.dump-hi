@@ -1,0 +1,267 @@
+
+==================== FINAL INTERFACE ====================
+2020-05-16 13:16:11.941327 UTC
+
+interface proje_60jq5xC5Q73LBw1qExzNbC:TypeCheck 7103
+  interface hash: 159f5d4efab78897d7459ecc4c17d8c9
+  ABI hash: 4f51550cef8d0ae496f931aa0ad8e858
+  export-list hash: 2eeabbf3be1ff7b11290b376e53b991e
+  orphan hash: ab5e72a8d4b2aba4266ee04dcafc12e0
+  flag hash: 962af636f8e927040c7daa9c21457292
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TypeCheck.checkFunEnv
+  TypeCheck.checkProgram
+  TypeCheck.tbinary
+  TypeCheck.tcheck
+  TypeCheck.tunary
+  TypeCheck.TEnv
+  TypeCheck.TFunEnv
+module dependencies: Declare
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  Declare 36a0ecee0bdf5fa089ab40e6042e3073
+  exports: ecea67ca7d8b61491bf9fcde82f1547e
+  Add dff90c1fa96160658ad433b4d3c21806
+  And 4605af560dd68a053ea92f22ae51c04b
+  Bin 5cbc33277e65730834c78d26a8466016
+  BinaryOp 5ac232d165763d69aae850963907cefd
+  BoolV d702e09f1b7c779e49b01f3ba0930ec6
+  Call 14908e14c36021ec9223fdc4cab1f6af
+  CallFC 4cae6a3e338cc4c3f0b16d7841074b00
+  CaseV b37ea43c2de7bc8f2d71f887ce7d801e
+  Decl a70c7747f4040f538516df3705641493
+  Div 588466427b2ef2bc85911f8cbc1ad3c4
+  EQ 50991fc97ef3d6286dd61718d4e9270d
+  Exp 1a3d404dd25e8820b60a97978095a605
+  Fun 794859ef0e06455c5d0cda060599eb66
+  FunEnv 36a33c9bb49a9742300c6708a941486f
+  Function b0bc9200c6db044b018a764d93037a1e
+  GE 5c8bff0ec44ce9693a27efd7eeab0ceb
+  GT 6e3349dfd8ea1d05cde949aca4a60e21
+  If 1c943e94bc002f188cf4bde812679dfe
+  IntV f655414e503ed2e05ab11747d34b2831
+  LE 4f9aba1e28280a2c23c4360c4eca0923
+  LT 76c8d6a8e111fc9744fd89c3bd1fa084
+  Lit 7e406791ab07fb4277a0792c3d9a1c77
+  Mult fbf814b2e16bb3f08c436f025e7871b1
+  Neg 27529bfbc9149a1f8d971a9b01118e11
+  Not 6a6e7372412c43d98bf24da834254537
+  Or bc0e24150d04717a3c226ec454225e3e
+  Program af1d2a49dc57e4927a1d1892652c274c
+  Program 7962fd0adca4b3bfb5049905b12e7f03
+  Raise 12f1cfbae62eaae217abd6b22f325188
+  Rcd c0c3555641bffeb7c5da462bdc94d212
+  RcdProj 40c4668d5d283219b33e58a957701202
+  Sub 02ed0d4f23fcde787c183b6c7a2186b7
+  TBool 278ec6997a43d210abd0e5f5c97e55d7
+  TFun 4c4ae16a4224604ffd42f353923be645
+  TInt 5f5c2fc77880f30dd04efff35e64723d
+  Try 8f0d69000bc0e5ca8763da9ffd98e9b1
+  TypDecl 3f42700647f59baf1f32cebe8e24d9b7
+  Type e7dc66c18798edd14c2f2c829b22b786
+  Unary bf89b01e5b3e6f1699414224578f6992
+  UnaryOp c82a4fb3290295286a792b122c93646d
+  Var e8c95f391fe4b299aa5c991f328354aa
+  Varnt d3b726d8635f51e59b7f84758ae9114d
+58fe8ba27d3a838cf5f5036112c01ad4
+  $s$fEqMaybe :: GHC.Classes.Eq (GHC.Base.Maybe Declare.Type)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe Declare.Type)
+                  TypeCheck.$s$fEqMaybe1
+                  (GHC.Base.$fEqMaybe_$c/= @ Declare.Type Declare.$fEqType) -}
+30a6caa6bc95f29c7f92f886b8606f04
+  $s$fEqMaybe1 ::
+    GHC.Base.Maybe Declare.Type
+    -> GHC.Base.Maybe Declare.Type -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ ds :: GHC.Base.Maybe Declare.Type
+                   ds1 :: GHC.Base.Maybe Declare.Type ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.True
+                        GHC.Base.Just ipv -> GHC.Types.False }
+                   GHC.Base.Just a1
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just b1 -> Declare.$fEqType_$c== a1 b1 } }) -}
+07adca5a4c530c60f7234d1765c06774
+  $wcheckProgram :: Declare.FunEnv -> Declare.Exp -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ ww :: Declare.FunEnv ww1 :: Declare.Exp ->
+                 case TypeCheck.checkFunEnv_checkFunEnv1
+                        ww
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, (TypeCheck.TEnv, Declare.Type))) of wild {
+                   GHC.Base.Nothing -> GHC.Types.False
+                   GHC.Base.Just fenv
+                   -> case TypeCheck.tcheck
+                             ww1
+                             (GHC.Types.[] @ (GHC.Base.String, Declare.Type))
+                             fenv of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just ds -> GHC.Types.True } }) -}
+1e44c387e8e4f7c769d9e23fdde98c29
+  type TEnv = [(GHC.Base.String, Declare.Type)]
+ae221dbf5875ecb6e5e6d4631e5f4339
+  type TFunEnv = [(GHC.Base.String, (TypeCheck.TEnv, Declare.Type))]
+b79a50ee5e5480ee089045dd067dcea2
+  checkFunEnv :: Declare.FunEnv -> GHC.Base.Maybe TypeCheck.TFunEnv
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ fds :: Declare.FunEnv ->
+                 TypeCheck.checkFunEnv_checkFunEnv1
+                   fds
+                   (GHC.Types.[]
+                      @ (GHC.Base.String, (TypeCheck.TEnv, Declare.Type)))) -}
+78089848351ab8ad7665e50cd9dedcd5
+  checkFunEnv_checkFunEnv1 ::
+    Declare.FunEnv
+    -> TypeCheck.TFunEnv -> GHC.Base.Maybe TypeCheck.TFunEnv
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+2be885341e80724ce06c5ac1a2c55955
+  checkProgram :: Declare.Program -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S(LSL),1*U(A,1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: Declare.Program ->
+                 case w of ww { Declare.Program ww1 ww2 ww3 ->
+                 TypeCheck.$wcheckProgram ww2 ww3 }) -}
+9f9d475ad762ab4e9094235d572830ba
+  tbinary ::
+    Declare.BinaryOp
+    -> Declare.Type -> Declare.Type -> GHC.Base.Maybe Declare.Type
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><S,1*U><L,1*U>,
+     Unfolding: (\ ds :: Declare.BinaryOp
+                   ds1 :: Declare.Type
+                   ds2 :: Declare.Type ->
+                 case ds of wild {
+                   Declare.Add
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary2 } }
+                   Declare.Sub
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary2 } }
+                   Declare.Mult
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary2 } }
+                   Declare.Div
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary2 } }
+                   Declare.And
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TBool
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TBool -> TypeCheck.tbinary1 } }
+                   Declare.Or
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TBool
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TBool -> TypeCheck.tbinary1 } }
+                   Declare.GT
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary1 } }
+                   Declare.LT
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary1 } }
+                   Declare.LE
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary1 } }
+                   Declare.GE
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt
+                        -> case ds2 of wild2 {
+                             DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                             Declare.TInt -> TypeCheck.tbinary1 } }
+                   Declare.EQ
+                   -> case Declare.$fEqType_$c== ds1 ds2 of wild1 {
+                        GHC.Types.False -> GHC.Base.Nothing @ Declare.Type
+                        GHC.Types.True -> TypeCheck.tbinary1 } }) -}
+d3e9e32f5c514e7dea3881e112f33873
+  tbinary1 :: GHC.Base.Maybe Declare.Type
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ Declare.Type Declare.TBool) -}
+d635d88c052f69ec7b69f682f08ca607
+  tbinary2 :: GHC.Base.Maybe Declare.Type
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ Declare.Type Declare.TInt) -}
+55799b768cbd490e941c67e079f46b44
+  tcheck ::
+    Declare.Exp
+    -> TypeCheck.TEnv
+    -> TypeCheck.TFunEnv
+    -> GHC.Base.Maybe Declare.Type
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U> -}
+9600a3dae67ef385e6bbd858d18c7fb8
+  tunary ::
+    Declare.UnaryOp -> Declare.Type -> GHC.Base.Maybe Declare.Type
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ ds :: Declare.UnaryOp ds1 :: Declare.Type ->
+                 case ds of wild {
+                   Declare.Neg
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TInt -> TypeCheck.tbinary2 }
+                   Declare.Not
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Base.Nothing @ Declare.Type
+                        Declare.TBool -> TypeCheck.tbinary1 } }) -}
+"SPEC/TypeCheck $fEqMaybe @ Type" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                            Declare.Type
+  GHC.Base.$fEqMaybe @ Declare.Type $dEq = TypeCheck.$s$fEqMaybe
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
