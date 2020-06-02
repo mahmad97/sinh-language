@@ -1,11 +1,12 @@
 module Main where
 
-import Prelude hiding (LT, GT, EQ)
-import Data.Maybe (fromJust)
 import Declare
 import Parser
 import Interp
 import TypeCheck
+
+import Prelude hiding (LT, GT, EQ)
+import Data.Maybe (fromJust)
 import System.Environment (getArgs)
 
 main :: IO ()
@@ -15,6 +16,7 @@ main = do
   --print src
   let ast = parseExpr src
   --print ast
-  if checkProgram ast
-    then print . execute $ ast
-    else error "You have type error in your program"
+  case checkProgram ast of
+    Left msg -> error msg
+    Right _ -> print . execute $ ast
+ 
