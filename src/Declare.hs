@@ -24,7 +24,7 @@ data Value
   | RaiseV Value
   deriving Eq
 
-data Typ
+data Type
   = TInt
   | TBool
   | TFun Type Type
