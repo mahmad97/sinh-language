@@ -90,7 +90,7 @@ instance Show Value where
   show (ClosureV{}) = "Closure"
   show (RcdV xs) = "{" ++ showSep ", " (map (\(n, v) -> n ++ " = " ++ show v) xs) ++ "}"
   show (VarntV str v t) = "<" ++ str ++ "=" ++ show v ++ " : " ++ show t ++ ">"
-  show (RaiseV v) = error "TODO Question 11"
+  show (RaiseV v) = "Runtime error: Error code " ++ show v
 
 instance Show Program where
   show (Program tenv fenv e) = (showTyp tenv) ++ "\n" ++ showSep "\n" (map showFun fenv) ++ "\n" ++ show e
@@ -119,7 +119,7 @@ instance Show Exp where
 
 showExp :: Int -> Exp -> String
 showExp _ (Try exp1 exp2) = "try " ++ show exp1 ++ " with " ++ show exp2
-showExp _ (Raise exp) = error "TODO Question 11"
+showExp _ (Raise e) = "Runtime error: Error code " ++ show e
 showExp _ (CaseV exp xs) = "  case " ++ show exp ++ " of\n  | " ++ showSep "\n  | " (map (\(n, v, e) -> "<" ++ n ++ "=" ++ v ++ "> => " ++ show e)  xs)
 showExp _ (Varnt str exp t) = "<" ++ str ++ "=" ++ show exp ++ " : " ++ show t ++ ">"
 showExp _ (RcdProj exp str) = showExp 0 exp ++ "." ++ str
@@ -211,6 +211,9 @@ findrcdType (x:xs) str = if (str == (fst x)) then (Just (snd x)) else (findrcdTy
 
 getlabel :: Value -> String
 getlabel (VarntV str v1 t) = str
+
+gettype :: Value -> Type
+gettype (VarntV str v1 t) = t
 
 findFunction :: String -> FunEnv -> Maybe Function
 findFunction name [] = Nothing

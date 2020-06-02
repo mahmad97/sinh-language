@@ -1,7 +1,7 @@
 /home/mahmad/Studies/sem8/ProgLang/project/project-release/src/Interp.hs:
-  hash: 34858336c649f5989d47cd60afb0584062192a00460dd8fc73a6d0642a4afd09
-  size: 3022
-  modtime: 1590937791
+  hash: 89133afd47e0b086fc2c3f03864fc2be91577e59ab96ed288e785b0cb83f3958
+  size: 3007
+  modtime: 1591100578
 /home/mahmad/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h:
   hash: 697df618f27fbdb6ea015dcc37405987ed041795017413ae3f3eb8549a5525e1
   size: 560
@@ -15,13 +15,13 @@
   size: 913
   modtime: 1581331077
 /home/mahmad/Studies/sem8/ProgLang/project/project-release/src/TypeCheck.hs:
-  hash: 50be1f98a549b02c4298b9af72fc1378407740f3c96c805a2b0bbd98ed4cb0b0
-  size: 10594
-  modtime: 1591081314
+  hash: 2b023ea03cb51cfb8407f3fc8580496792ba30b6ca8e1e4e5d25375dda55fec1
+  size: 11013
+  modtime: 1591100192
 /home/mahmad/Studies/sem8/ProgLang/project/project-release/src/Declare.hs:
-  hash: 5529f238563051d2a127c486384a0f970cf71d1afe4ae52d770e15ff9a11da39
-  size: 8716
-  modtime: 1591081999
+  hash: e1d60f72ce943b4a047e94ae638445e3dfa55c539beadde319c4e6cc01cd341c
+  size: 8798
+  modtime: 1591098428
 /usr/include/stdc-predef.h:
   hash: ee35c95f8e09d071278e05e755a1bd41fbbf4517374d9464beabb1b16c1b58e9
   size: 2363
@@ -29,7 +29,7 @@
 ? /home/mahmad/Studies/sem8/ProgLang/project/project-release/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h
 : hash: 214e3b99e87b13fadd4b1e68bfecc2bebc8bafa870a7dd2ea0069ab1ff1a1967
   size: 3482
-  modtime: 1591072464
+  modtime: 1591091301
 /home/mahmad/Studies/sem8/ProgLang/project/project-release/project.cabal:
   hash: 0d9b47d06357d371172311edbea728cdc6bddba39dd2b9bb1008f30597df012f
   size: 1649

@@ -192,22 +192,26 @@ tcheck (Varnt name e t) env tenv fenv =
 tcheck (CaseV e xs) env tenv fenv =
   case tcheck e env tenv fenv of
     Left msg -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\n" ++ msg
-    Right t -> caseChkr xs
-      where
-        caseChkr :: [(String, String, Exp)] -> Either String Type
-        caseChkr [] = Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nCase list cannot be empty"
-        caseChkr ((l1, v1, e1) : (l2, v2, e2) : xss) =
-          case (tcheck e1 ((v1, t) : env) tenv fenv, tcheck e2 ((v2, t) : env) tenv fenv) of
-            (Left msg, _) -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nIn case \"" ++ "<" ++ l1 ++ "=" ++ v1 ++ "> => " ++ show e1 ++ "\":\n" ++ msg
-            (_, Left msg) -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nIn case \"" ++ "<" ++ l2 ++ "=" ++ v2 ++ "> => " ++ show e2 ++ "\":\n" ++ msg
-            (Right t1, Right t2) ->
-              if t1 == t2
-                then caseChkr ((l2, v2, e2) : xss)
-                else Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nCases \"" ++ "<" ++ l1 ++ "=" ++ v1 ++ "> => " ++ show e1 ++ "\" and \"" ++ "<" ++ l2 ++ "=" ++ v2 ++ "> => " ++ show e2 ++ "\" have different resolved types (" ++ show t1 ++ ", " ++ show t2 ++ ")"
-        caseChkr ((l1, v1, e1) : xss) =
-          case tcheck e1 env tenv fenv of
-            Left msg -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nIn case \"" ++ "<" ++ l1 ++ "=" ++ v1 ++ "> => " ++ show e1 ++ "\":\n" ++ msg
-            Right t1 -> Right t1
+    Right t ->
+      case typRslvr t tenv of
+        Left msg -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\n" ++ msg
+        Right (TVarnt ((name, t') : ys)) -> caseChkr xs
+          where
+            caseChkr :: [(String, String, Exp)] -> Either String Type
+            caseChkr [] = Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nCase list cannot be empty"
+            caseChkr ((l1, v1, e1) : (l2, v2, e2) : xss) =
+              case (tcheck e1 ((v1, t') : env) tenv fenv, tcheck e2 ((v2, t') : env) tenv fenv) of
+                (Left msg, _) -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nIn case \"" ++ "<" ++ l1 ++ "=" ++ v1 ++ "> => " ++ show e1 ++ "\":\n" ++ msg
+                (_, Left msg) -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nIn case \"" ++ "<" ++ l2 ++ "=" ++ v2 ++ "> => " ++ show e2 ++ "\":\n" ++ msg
+                (Right t1, Right t2) ->
+                  if t1 == t2
+                    then caseChkr ((l2, v2, e2) : xss)
+                    else Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nCases \"" ++ "<" ++ l1 ++ "=" ++ v1 ++ "> => " ++ show e1 ++ "\" and \"" ++ "<" ++ l2 ++ "=" ++ v2 ++ "> => " ++ show e2 ++ "\" have different resolved types (" ++ show t1 ++ ", " ++ show t2 ++ ")"
+            caseChkr ((l1, v1, e1) : xss) =
+              case tcheck e1 env tenv fenv of
+                Left msg -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\nIn case \"" ++ "<" ++ l1 ++ "=" ++ v1 ++ "> => " ++ show e1 ++ "\":\n" ++ msg
+                Right t1 -> Right t1
+        _ -> Left $ "In case expression \"" ++ show (CaseV e xs) ++ "\":\n" ++ show e ++ " must resolve to Type \"TVarnt [(String, Type)]\"\n Currently get: "  ++ show (tcheck e env tenv fenv)
 
 tcheck (Raise e) env tenv fenv = tcheck e env tenv fenv
 

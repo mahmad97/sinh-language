@@ -35,17 +35,15 @@ evaluate e env tenv fenv = eval e env
         v -> v
     eval (Raise exp) env = RaiseV $ eval exp env
     eval (CaseV exp xs) env =
-      let
-        label = getlabel (eval exp env)
-      in labelMatching label xs
-      where
-        labelMatching :: String -> [(String, String, Exp)] -> Value
-        labelMatching _ [] = RaiseV (IntV 1)
-        labelMatching label ((str1, str2, e) : xss) =
-          if label == str1
-            then eval e ((str2, v) : env)
-            else labelMatching label xss
-            where v = eval exp env
+      case eval exp env of
+        VarntV str v t -> labelMatching str xs
+          where
+            labelMatching :: String -> [(String, String, Exp)] -> Value
+            labelMatching _ [] = RaiseV (IntV 1)
+            labelMatching label ((str1, str2, e) : xss) =
+              if label == str1
+                then eval e ((str2, v) : env)
+                else labelMatching label xss
     eval (Varnt str exp t) env = VarntV str v t
       where v = eval exp env
     eval (RcdProj exp label) env =
