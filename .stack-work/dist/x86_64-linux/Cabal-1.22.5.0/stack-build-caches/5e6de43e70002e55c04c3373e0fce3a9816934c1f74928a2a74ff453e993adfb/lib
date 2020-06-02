@@ -1,0 +1,48 @@
+/home/mahmad/Studies/sem8/ProgLang/project/project-release/src/Interp.hs:
+  hash: 34858336c649f5989d47cd60afb0584062192a00460dd8fc73a6d0642a4afd09
+  size: 3022
+  modtime: 1590937791
+/home/mahmad/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h:
+  hash: 697df618f27fbdb6ea015dcc37405987ed041795017413ae3f3eb8549a5525e1
+  size: 560
+  modtime: 1581331077
+/home/mahmad/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcconfig.h:
+  hash: 72b4d70eadce99c167db53a0e69fddaec09f09713eb054530f113c617001e1f3
+  size: 107
+  modtime: 1581331077
+/home/mahmad/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcplatform.h:
+  hash: 6f30e9ad0022d26323aca04816a74e38a04af174747fe91efa77324c78b0d73d
+  size: 913
+  modtime: 1581331077
+/home/mahmad/Studies/sem8/ProgLang/project/project-release/src/TypeCheck.hs:
+  hash: 50be1f98a549b02c4298b9af72fc1378407740f3c96c805a2b0bbd98ed4cb0b0
+  size: 10594
+  modtime: 1591081314
+/home/mahmad/Studies/sem8/ProgLang/project/project-release/src/Declare.hs:
+  hash: 5529f238563051d2a127c486384a0f970cf71d1afe4ae52d770e15ff9a11da39
+  size: 8716
+  modtime: 1591080193
+/usr/include/stdc-predef.h:
+  hash: ee35c95f8e09d071278e05e755a1bd41fbbf4517374d9464beabb1b16c1b58e9
+  size: 2363
+  modtime: 1523909660
+? /home/mahmad/Studies/sem8/ProgLang/project/project-release/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h
+: hash: 214e3b99e87b13fadd4b1e68bfecc2bebc8bafa870a7dd2ea0069ab1ff1a1967
+  size: 3482
+  modtime: 1591072464
+/home/mahmad/Studies/sem8/ProgLang/project/project-release/project.cabal:
+  hash: 0d9b47d06357d371172311edbea728cdc6bddba39dd2b9bb1008f30597df012f
+  size: 1649
+  modtime: 1591072250
+/home/mahmad/Studies/sem8/ProgLang/project/project-release/src/Tokens.x:
+  hash: 1ab43a3954a908933c4013009aa3fd1422a0319bf9eb6984528b536bbe769792
+  size: 3409
+  modtime: 1589137532
+/home/mahmad/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcautoconf.h:
+  hash: a7a02acba2aac3223c8732330c0c973fdf2eb059e6b3170b5ee902763b3a931c
+  size: 11704
+  modtime: 1581331077
+/home/mahmad/Studies/sem8/ProgLang/project/project-release/src/Parser.y:
+  hash: 1d9375e2700dc8b0fb67d8105fb8a2dc50f46f3b43b53d89498bdb0fcf7a0ac2
+  size: 4623
+  modtime: 1591081293

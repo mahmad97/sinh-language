@@ -1,40 +1,49 @@
 module Declare where
 
+import Data.List (intersect)
 import Data.Maybe (fromJust)
 import Prelude hiding (LT, GT, EQ)
 
-data BinaryOp = Add | Sub | Mult | Div
-              | And | Or  | GT   | LT  | LE
-              | GE  | EQ
-              deriving Eq
+data BinaryOp
+  = Add | Sub | Mult | Div
+  | And | Or  | GT   | LT  | LE
+  | GE  | EQ
+  deriving Eq
 
 data UnaryOp
   = Neg
   | Not
   deriving Eq
 
-  --- raise as value
-
 data Value
-  = IntV Int    
-  | BoolV Bool  
-  | ClosureV (String, Type) Exp Env        -- added
-  | RcdV [(String, Value)]                 -- added
-  | VarntV String Value Type               -- added
-  | RaiseV Value                           -- added
+  = IntV Int
+  | BoolV Bool
+  | ClosureV (String, Type) Exp Env
+  | RcdV [(String, Value)]
+  | VarntV String Value Type
+  | RaiseV Value
   deriving Eq
 
-data Type
+data Typ
   = TInt
   | TBool
-  | TFun Type Type                   -- added
-  | TRcd [(String, Type)]            -- added
-  | TVarnt [(String, Type)]          -- added
-  | TypDecl String                   -- added
-  deriving Eq
+  | TFun Type Type
+  | TRcd [(String, Type)]
+  | TVarnt [(String, Type)]
+  | TypDecl String
 
---data Declr = FunDecl (String, Function)
---           | TypDecl (String, Type)
+instance Eq Type where
+  TInt == TInt = True
+  TBool == TBool = True
+  TFun t1 t2 == TFun t3 t4 =
+    t1 == t3 && t2 == t4
+  TRcd xs == TRcd ys =
+    xs == ys
+  TVarnt xs == TVarnt ys =
+    any (\y -> elem y xs) ys
+  TypDecl a == TypDecl b =
+    a == b
+  _ == _ = False
 
 data Exp
   = Lit Value
@@ -275,4 +284,4 @@ test5 :: String
 test5 = "function Int divide (x : Int, y : Int) { x/y } function Bool isZero (x : Int) { if (x ==0) true; else false } var x : Int = 1; var y : Int = 0; try @divide(x,y) with @isZero(y)"
 
 test6 :: String
-test6 = "var x : Int = 5; var f : Int -> Int = function(foo : Int -> Int) { foo(x) }; var add : Int -> Int = function(x : Int) {function(y : Int) {    x + y  }};var x : Int = 4;f(add(x))"
+test6 = "var x : Int = 5; var f : (Int -> Int) -> Int = function(foo : Int -> Int) { foo(x) }; var add : Int -> Int = function(x : Int) {function(y : Int) {    x + y  }};var x : Int = 4;f(add(x))"

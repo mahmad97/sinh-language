@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: repline-0.1.2.0@sha256:f541f8a690321e73feb8a6df3ebf83234aab3659941084959ff5e47e06060538,1202
+    pantry-tree:
+      size: 270
+      sha256: b9372c160ce4e371df00dc2bb5306de337ced17582330c5794d7176281974e25
+  original:
+    hackage: repline-0.1.2.0
 snapshots:
 - completed:
     size: 424302

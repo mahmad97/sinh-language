@@ -105,25 +105,29 @@ tcheck (Var v) env _ _ =
     Nothing -> Left $ "\"Variable " ++ v ++ "\" not found in Environment"
     Just t -> Right t
 
--- tcheck (Decl v t e body) env tenv fenv =
---   case tcheck e env tenv fenv of
---     Nothing -> Nothing
---     Just t2 ->
---       if (trace (show t') t') == (trace (show t2) t2)
---         then tcheck body ((v, t) : env) tenv fenv
---         else Nothing
---         where t' = typRslvr t tenv
-
 tcheck (Decl v t e body) env tenv fenv =
-  case t of
-    (TypDecl name) ->
-      case typRslvr t tenv of
-        Left msg -> Left $ "In Var Declaration \"" ++ show (Decl v t e body) ++ "\":\n" ++ msg
-        Right t' -> tcheck body ((v, t) : env) tenv fenv
-    _ ->
+  case typRslvr t tenv of
+    Left msg -> Left $ "In Var Declaration \"var " ++ v ++ " : " ++ show t ++ " = " ++ showExp 0 e ++ "\":\n" ++ msg
+    Right t' ->
       case tcheck e env tenv fenv of
-        Left msg -> Left $ "In Var Declaration \"" ++ show (Decl v t e body) ++ "\":\n" ++ msg
-        Right t1 -> tcheck body ((v, t1) : env) tenv fenv
+        Left msg -> Left $ "In Var Declaration \"var " ++ v ++ " : " ++ show t ++ " = " ++ showExp 0 e ++ "\":\n" ++ msg
+        Right t1 ->
+          if t' == t1
+            then tcheck body ((v, t) : env) tenv fenv
+            else Left $ "In Var Declaration \"var " ++ v ++ " : " ++ show t ++ " = " ++ showExp 0 e ++ "\":\nExpected type: " ++ show t' ++ "\nResolved espression type: " ++ show t1
+
+-- tcheck (Decl v t e body) env tenv fenv =
+--   case t of
+--     (TypDecl name) ->
+--       case typRslvr t tenv of
+--         Left msg -> Left $ "In Var Declaration \"" ++ show (Decl v t e body) ++ "\":\n" ++ msg
+--         Right t' -> tcheck body ((v, t) : env) tenv fenv
+--     _ ->
+--       case tcheck e env tenv fenv of
+--         Left msg -> Left $ "In Var Declaration \"" ++ show (Decl v t e body) ++ "\":\n" ++ msg
+--         Right t1 -> tcheck body ((v, t1) : env) tenv fenv
+
+
 
 tcheck (Call fname args) env tenv fenv =
   case lookup fname fenv of
@@ -182,7 +186,7 @@ tcheck (Varnt name e t) env tenv fenv =
     Left msg -> Left $ "In variant expression \"" ++ show (Varnt name e t) ++ "\":\n" ++ msg
     Right t1 ->
       if t1 == t
-        then Right t
+        then Right $ TVarnt [(name, t)]
         else Left $ "In variant expression \"" ++ show (Varnt name e t) ++ "\":\nExpected type: " ++ show t ++ "\nResolved type: " ++ show t1
 
 tcheck (CaseV e xs) env tenv fenv =

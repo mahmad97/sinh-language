@@ -82,12 +82,15 @@ ids : ids ',' id ':' typ    { $1 ++ [($3, $5)] }
     | id ':' typ            { [($1, $3)] }
     |                       { [] }
 
-typ : Int           { TInt }
-    | Bool          { TBool }
-    | typ '->' typ  { TFun $1 $3 }
-    | '{' tRcds '}'  { TRcd $2 }
-    | '<' tRcds '>'  { TVarnt $2 }
-    | id             { TypDecl $1 }
+typ : Int                           { TInt }
+    | Bool                          { TBool }
+    | typ '->' typ                  { TFun $1 $3 }
+    | '(' typ ')' '->' typ          { TFun $2 $5 }
+    | typ '->' '(' typ ')'          { TFun $1 $4 }
+    | '(' typ ')' '->' '(' typ ')'  { TFun $2 $6 }
+    | '{' tRcds '}'                 { TRcd $2 }
+    | '<' tRcds '>'                 { TVarnt $2 }
+    | id                            { TypDecl $1 }
 
 tRcds: tRcds tRcd1  { $1 ++ [$2] }
     | {- empty -}    { [] }
